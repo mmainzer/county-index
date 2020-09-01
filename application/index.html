@@ -1,0 +1,366 @@
+<!-- This is a template for displaying a webmap side-by-side with a table, or other graphic-->
+<!-- The map and table/graphic are linked together by various event listeners triggered by the user -->
+<!-- The purpose is to have something highly performant, customizable, and easily used in a browser -->
+<!-- The goal is to be as professional looking as possible, with similar styles across applications -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Georgia Power County Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name='robots' content='noindex, nofollow'>
+
+  <!-- mapbox -->
+  <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>   -->
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-html5-1.6.2/datatables.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/jxl7wvr.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <main id="site-content">
+    <article id="interactive" class="interactive">
+
+      <header id="interactive-header" class="interactive-header">
+        <div id="company-logo-header">
+          <img class="gpc-logo" src="../assets/images/gpc-logo-horizontal.svg">
+        </div>
+        <h1 id="interactive-heading" class="interactive-heading">
+          Assessing Community Health in Georgia
+        </h1>
+        <div class="interactive-byline-container">
+          <p id="interactive-byline">With so many data points, it's difficult to know where to focus. Our county index tool can help simplify this process.</p>
+        </div>
+
+      </header>
+      
+    </article>
+  </main>
+
+  <section id="section-content">
+    <div id="content-body">
+      <div class="container-fluid">
+        <div id="headerImgContainer" class="asset graphic" style="max-width: 600px;">
+          <!-- <h3 class="caption-heading">This is a caption heading for a graphic</h3> -->
+          <div class="graphic-container">
+            <!-- This is where a graphic (svg or image) will go -->
+            <img class="gpc-logo img-fluid" alt="Responsive image" src="../assets/images/banner-2.jpg">
+          </div>
+        </div>
+      </div>
+      <div id="content-story" class="story">
+        
+        <p class="body">All of our communities have strengths and areas of growth. Many of us know these strengths and weaknesses off the top of our head, or have strong research or analytical teams to stay up to date on the information. But the seemingly endless list of data points can make the process of sorting out community strengths from weaknesses overwhelming. If a community wants to devote a attention to strengthening its education system, for example, this can immediately become a dauntign task. What part of our ducation system? Elementary schools? Colleges? Adult learners? And what metrics do we even use to evaluate the various components for our county's education system to begin with?</p>
+        <p class="body">These sorts of problems are why indexes are so popular. Instead of having to analyze hundreds of data points, only the select few known to signal impact in an area are used, and then combined into a single scale for a simplified communication and easier understanding. Of course, this begs the question: why another index? In the Georgia Academy for Economic Development, we're uniquely focused on Georgia's communities. So instead of using an index out there designed to evaluate every county across the nation, we developed a way that focuses exclusively on Georgia's counties, the issues that matter specifically to them, and in turn made it possible to assess a county's health in context of only Georgia's other counties.</p>
+        <p class="body intro-last">In order to this, we collected 11 data points from reliable sources at the county level, and combined them into 4 categories: Economy, Education, Health, and Opportunity. Those data points are then normalized across all 159 counties, and aggregated into a score for each category. In turn, each of those category's scores are then combined for an overall, Composite Score.</p>
+
+
+        <!-- CONTAINERS FOR MAP AND GRAPHIC/TABLE -->
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"><img class="indicator-icon text-nowrap" src="../assets/icons/economy-1.svg"><h3 class=indicator-title>Economy</h3><p>30%</p></th>
+                <th scope="col"><img class="indicator-icon text-nowrap" src="../assets/icons/education-1.svg"><h3 class=indicator-title>Education</h3><p>30%</p></th>
+                <th scope="col"><img class="indicator-icon text-nowrap" src="../assets/icons/health-1.svg"><h3 class=indicator-title>Health</h3><p>20%</p></th>
+                <th scope="col"><img class="indicator-icon text-nowrap" src="../assets/icons/opportunity-1.svg"><h3 class=indicator-title>Opportunity</h3><p>20%</p></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Unemployment</li>
+                    <li>Labor Force Participation</li>
+                    <li>Population Change</li>
+                    <li>GRP Change</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Pre-K Enrollment</li>
+                    <li>High School Graduation</li>
+                    <li>Education Attainment</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Life Expectancy</li>
+                    <li>Uninsured Population</li>
+                    <li>Access to Physician</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Poverty Rate</li>
+                    <li>Poverty Rate Change</li>
+                    <li>Opportunity Youth</li>
+                    <li>Housing Affordability</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="body">Based on the categories and data points, how well do you think your county is performing within these areas? use the tool below to select your county, and assign it a score in each category. After completing the form, you'll see how your assessment compares to the actual results.</p>
+
+        <div class="container graphic-form-container">
+          <div class="graphic-container form-container">
+            <div class="heading-container">
+              <h5>How does your county perform in the following areas?</h5>
+              <p>Move the sliders on a scale of 0 to 100, with 0 being the worst, and 100 being the best</p>
+            </div>
+            <div class="container-dropdown">
+              <h5 class='select-title'>First, select a county</h5>
+                <select id="fill-select" class="single-select" name="state">
+                  <option value=""></option>
+                  <option value="appling">Appling County</option>
+                  <option value='atkinson'>Atkinson County</option>
+                  <option value='bacon'>Bacon County</option>
+                  <option value='baker'>Baker County</option>
+                  <option value='baldwin'>Baldwin County</option>
+                  <option value='banks'>Banks County</option>
+                  <option value='barrow'>Barrow County</option>
+                  <option value='bartow'>Bartow County</option>
+                  <option value='benHill'>Ben Hill County</option>
+                  <option value='berrien'>Berrien County</option>
+                  <option value='bibb'>Bibb County</option>
+                  <option value='bleckley'>Bleckley County</option>
+                  <option value='brantley'>Brantley County</option>
+                  <option value='brooks'>Brooks County</option>
+                  <option value='bryan'>Bryan County</option>
+                  <option value='bulloch'>Bulloch County</option>
+                  <option value='burke'>Burke County</option>
+                  <option value='butts'>Butts County</option>
+                  <option value='calhoun'>Calhoun County</option>
+                  <option value='camden'>Camden County</option>
+                  <option value='candler'>Candler County</option>
+                  <option value='carroll'>Carroll County</option>
+                  <option value='catoosa'>Catoosa County</option>
+                  <option value='charlton'>Charlton County</option>
+                  <option value='chatham'>Chatham County</option>
+                  <option value='chattahoochee'>Chattahoochee County</option>
+                  <option value='chattooga'>Chattooga County</option>
+                  <option value='cherokee'>Cherokee County</option>
+                  <option value='clarke'>Clarke County</option>
+                  <option value='clay'>Clay County</option>
+                  <option value='clayton'>Clayton County</option>
+                  <option value='clinch'>Clinch County</option>
+                  <option value='cobb'>Cobb County</option>
+                  <option value='coffee'>Coffee County</option>
+                  <option value='colquitt'>Colquitt County</option>
+                  <option value='columbia'>Columbia County</option>
+                  <option value='cook'>Cook County</option>
+                  <option value='coweta'>Coweta County</option>
+                  <option value='crawford'>Crawford County</option>
+                  <option value='crisp'>Crisp County</option>
+                  <option value='dade'>Dade County</option>
+                  <option value='dawson'>Dawson County</option>
+                  <option value='decatur'>Decatur County</option>
+                  <option value='dekalb'>DeKalb County</option>
+                  <option value='dodge'>Dodge County</option>
+                  <option value='dooly'>Dooly County</option>
+                  <option value='dougherty'>Dougherty County</option>
+                  <option value='douglas'>Douglas County</option>
+                  <option value='early'>Early County</option>
+                  <option value='echols'>Echols County</option>
+                  <option value='effingham'>Effingham County</option>
+                  <option value='elbert'>Elbert County</option>
+                  <option value='emanuel'>Emanuel County</option>
+                  <option value='evans'>Evans County</option>
+                  <option value='fannin'>Fannin County</option>
+                  <option value='fayette'>Fayette County</option>
+                  <option value='floyd'>Floyd County</option>
+                  <option value='forsyth'>Forsyth County</option>
+                  <option value='franklin'>Franklin County</option>
+                  <option value='fulton'>Fulton County</option>
+                  <option value='gilmer'>Gilmer County</option>
+                  <option value='glascock'>Glascock County</option>
+                  <option value='glynn'>Glynn County</option>
+                  <option value='gordon'>Gordon County</option>
+                  <option value='grady'>Grady County</option>
+                  <option value='greene'>Greene County</option>
+                  <option value='gwinnett'>Gwinnett County</option>
+                  <option value='habersham'>Habersham County</option>
+                  <option value='hall'>Hall County</option>
+                  <option value='hancock'>Hancock County</option>
+                  <option value='haralson'>Haralson County</option>
+                  <option value='harris'>Harris County</option>
+                  <option value='hart'>Hart County</option>
+                  <option value='heard'>Heard County</option>
+                  <option value='henry'>Henry County</option>
+                  <option value='houston'>Houston County</option>
+                  <option value='irwin'>Irwin County</option>
+                  <option value='jackson'>Jackson County</option>
+                  <option value='jasper'>Jasper County</option>
+                  <option value='jeffDavis'>Jeff Davis County</option>
+                  <option value='jefferson'>Jefferson County</option>
+                  <option value='jenkins'>Jenkins County</option>
+                  <option value='johnson'>Johnson County</option>
+                  <option value='jones'>Jones County</option>
+                  <option value='lamar'>Lamar County</option>
+                  <option value='lanier'>Lanier County</option>
+                  <option value='laurens'>Laurens County</option>
+                  <option value='lee'>Lee County</option>
+                  <option value='liberty'>Liberty County</option>
+                  <option value='lincoln'>Lincoln County</option>
+                  <option value='long'>Long County</option>
+                  <option value='lowndes'>Lowndes County</option>
+                  <option value='lumpkin'>Lumpkin County</option>
+                  <option value='mcduffie'>McDuffie County</option>
+                  <option value='mcintosh'>McIntosh County</option>
+                  <option value='macon'>Macon County</option>
+                  <option value='madison'>Madison County</option>
+                  <option value='marion'>Marion County</option>
+                  <option value='meriwether'>Meriwether County</option>
+                  <option value='miller'>Miller County</option>
+                  <option value='mitchell'>Mitchell County</option>
+                  <option value='monroe'>Monroe County</option>
+                  <option value='montgomery'>Montgomery County</option>
+                  <option value='morgan'>Morgan County</option>
+                  <option value='murray'>Murray County</option>
+                  <option value='muscogee'>Muscogee County</option>
+                  <option value='newton'>Newton County</option>
+                  <option value='oconee'>Oconee County</option>
+                  <option value='oglethorpe'>Oglethorpe County</option>
+                  <option value='paulding'>Paulding County</option>
+                  <option value='peach'>Peach County</option>
+                  <option value='pickens'>Pickens County</option>
+                  <option value='pierce'>Pierce County</option>
+                  <option value='pike'>Pike County</option>
+                  <option value='polk'>Polk County</option>
+                  <option value='pulaski'>Pulaski County</option>
+                  <option value='putnam'>Putnam County</option>
+                  <option value='quitman'>Quitman County</option>
+                  <option value='rabun'>Rabun County</option>
+                  <option value='randolph'>Randolph County</option>
+                  <option value='richmond'>Richmond County</option>
+                  <option value='rockdale'>Rockdale County</option>
+                  <option value='schley'>Schley County</option>
+                  <option value='screven'>Screven County</option>
+                  <option value='seminole'>Seminole County</option>
+                  <option value='spalding'>Spalding County</option>
+                  <option value='stephens'>Stephens County</option>
+                  <option value='stewart'>Stewart County</option>
+                  <option value='sumter'>Sumter County</option>
+                  <option value='talbot'>Talbot County</option>
+                  <option value='taliaferro'>Taliaferro County</option>
+                  <option value='tattnall'>Tattnall County</option>
+                  <option value='taylor'>Taylor County</option>
+                  <option value='telfair'>Telfair County</option>
+                  <option value='terrell'>Terrell County</option>
+                  <option value='thomas'>Thomas County</option>
+                  <option value='tift'>Tift County</option>
+                  <option value='toombs'>Toombs County</option>
+                  <option value='towns'>Towns County</option>
+                  <option value='treutlen'>Treutlen County</option>
+                  <option value='troup'>Troup County</option>
+                  <option value='turner'>Turner County</option>
+                  <option value='twiggs'>Twiggs County</option>
+                  <option value='union'>Union County</option>
+                  <option value='upson'>Upson County</option>
+                  <option value='walker'>Walker County</option>
+                  <option value='walton'>Walton County</option>
+                  <option value='ware'>Ware County</option>
+                  <option value='warren'>Warren County</option>
+                  <option value='washington'>Washington County</option>
+                  <option value='wayne'>Wayne County</option>
+                  <option value='webster'>Webster County</option>
+                  <option value='wheeler'>Wheeler County</option>
+                  <option value='white'>White County</option>
+                  <option value='whitfield'>Whitfield County</option>
+                  <option value='wilcox'>Wilcox County</option>
+                  <option value='wilkes'>Wilkes County</option>
+                  <option value='wilkinson'>Wilkinson County</option>
+                  <option value='worth'>Worth County</option>
+                </select>
+            </div>
+            <form>
+              <div class="form-group">
+                <h5 for="formControlRange">Economy</h5>
+                <div class="slider-container"><span>0</span><input type="range" class="form-control-range" min="0" max="100" step="1" value="50" id="econRange"><span>100</span></div>
+                <div class="slider-val-container"><h1 class='slider-val' id="econVal">50</h1></div>
+              </div>
+            </form>
+            <form>
+              <div class="form-group">
+                <h5 for="formControlRange">Education</h5>
+                <div class="slider-container"><span>0</span><input type="range" class="form-control-range" min="0" max="100" step="1" value="50" id="eduRange"><span>100</span></div>
+                <div class="slider-val-container"><h1 class='slider-val' id="eduVal">50</h1></div>
+              </div>
+            </form>
+            <form>
+              <div class="form-group">
+                <h5 for="formControlRange">Health</h5>
+                <div class="slider-container"><span>0</span><input type="range" class="form-control-range" min="0" max="100" step="1" value="50" id="healthRange"><span>100</span></div>
+                <div class="slider-val-container"><h1 class='slider-val' id="healthVal">50</h1></div>
+              </div>
+            </form>
+            <form>
+              <div class="form-group">
+                <h5 for="formControlRange">Opportunity</h5>
+                <div class="slider-container"><span>0</span><input type="range" class="form-control-range" min="0" max="100" step="1" value="50" id="oppRange"><span>100</span></div>
+                <div class="slider-val-container"><h1 class='slider-val' id="oppVal">50</h1></div>
+              </div>
+            </form>
+            <div class="button-container">
+              <button id="scoreSubmit" type="button" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container results-container">
+          <div class="row">
+            <div class="col score-labels"><h5>Your Assessment</h5><h1 id='guessScoreLabel' class='score-label'>81</h1></div>
+            <div class="col score-explain"><p id="scoreExplain">You <span id="scorePlace">overestimated</span> your county's score by <span id="differenceLabel">31 points</span>. Use the tool below to explore the data</p></div>
+            <div class="col score-labels"><h5>Actual Score</h5><h1 id='actualScoreLabel' class='score-label'>81</h1></div>
+          </div>
+        </div>
+
+        <p class="body">To explore the data in greater detail, use the tools below. There is a simple table with all county scores, as well as an exploratory tool for more advanced analysis of the indicators and their underlying metrics.</p>
+
+        <div class="container-fluid">
+          <div class="graphic-container tableau-container">
+            <div class='tableauPlaceholder' id='viz1597857653658' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GA&#47;GACountyIndex&#47;ComopositeOverview&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GACountyIndex&#47;ComopositeOverview' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GA&#47;GACountyIndex&#47;ComopositeOverview&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1597857653658');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='818px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='818px';} else { vizElement.style.width='100%';vizElement.style.height='3050px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="graphic-container table-container">
+            <iframe title="[ Insert title here ]" aria-label="chart" id="datawrapper-chart-kuuwa" src="https://datawrapper.dwcdn.net/kuuwa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="537"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- CSV2GEOJSON FOR HANDLING POINT FILES -->
+<!-- <script src='https://npmcdn.com/csv2geojson@5.1.1/csv2geojson.js'></script> -->
+<!-- TURF FOR SPATIAL ANALYSIS AND FUNCTIONS IF NECESSARY -->
+<!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> -->
+<!-- DATATABLES FOR EASILY EXPORTABLE AND SORTABLE HTML TABLES -->
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-html5-1.6.2/datatables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="events.js"></script>
+
+</body>
+
+</html>
