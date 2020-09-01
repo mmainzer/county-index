@@ -6,8 +6,7 @@ let svg = d3
 			.attr("height", height)
 			.attr("width", width);
 
-let categories = ["Composite","Economy","Education","Health","Opportunity"];
-
-let yCoords = categories.map((d, i) => 150 + i * 150);
-let yScale = d3.scaleOrdinal().domain(categories).range(yCoords);
+d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/final/scoresTable.csv').then((data) => {
+	
+});
 
