@@ -22,6 +22,7 @@ $(document).ready(function() {
         $("#differenceLabel").text(Math.abs( difference ) + " points");
         $('#actualScoreLabel').text(actual);
         $('.results-container').show();
+        // $('#chartContainer').show();
         $('.table-container').show();
         $('.tableau-container').css("opacity",1);
     }); 
