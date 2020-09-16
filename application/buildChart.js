@@ -21,16 +21,16 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 
 	let color = d3.scaleOrdinal().domain(categories).range(d3.schemePaired);
 
-	let popDomain = d3.extent(data.map( (d) => ( d["Population"] ) ) );
-	popDomain = popDomain.map((d) => Math.sqrt(d));
-	let size = d3.scaleLinear().domain(popDomain).range([5, 30]);
+	// let popDomain = d3.extent(data.map( (d) => ( d["Population"] ) ) );
+	// popDomain = popDomain.map((d) => Math.sqrt(d));
+	// let size = d3.scaleLinear().domain(popDomain).range([5, 30]);
 	
-	const y = d3.scaleBand().rangeRound([0, height]);
+	// const y = d3.scaleBand().rangeRound([0, height]);
 	
 
-	const yAxisLeft = d3.axisLeft(y).tickSize(0);
+	// const yAxisLeft = d3.axisLeft(y).tickSize(0);
 
-	const yAxisRight = d3.axisRight(y).tickSizeOuter(0).tickSizeInner(-width);
+	// const yAxisRight = d3.axisRight(y).tickSizeOuter(0).tickSizeInner(-width);
 
 
 	// create a way to hover over the dots to get their attributes
@@ -84,7 +84,7 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
         // color the circles of the selected county
         $("."+county).attr("fill", "rgba(0, 188, 241, 0.6)");
 
-        console.log(data);
+        // console.log(data);
         // create an object for the new scores
         let newData = [
 			        	{ County: "My-County", Category: "Composite", Population: "NA", Score: score },
@@ -96,7 +96,7 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 		newData.forEach(entry => {
 			data.push(entry);
 		});
-		console.log(newData);
+		// console.log(newData);
 
 		svg.selectAll('.circ')
 		.data(newData)
