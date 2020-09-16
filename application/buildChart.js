@@ -87,11 +87,11 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
         // console.log(data);
         // create an object for the new scores
         let newData = [
-			        	{ County: "My-County", Category: "Composite", Population: "NA", Score: score },
-			        	{ County: "My-County", Category: "Economy", Population: "NA", Score: $('#econRange').val() },
-			        	{ County: "My-County", Category: "Education", Population: "NA", Score: $('#eduRange').val() },
-			        	{ County: "My-County", Category: "Health", Population: "NA", Score: $('#healthRange').val() },
-			        	{ County: "My-County", Category: "Opportunity", Population: "NA", Score: $('#oppRange').val() }
+			        	{ County: "My-Selection", Category: "Composite", Population: "NA", Score: score },
+			        	{ County: "My-Selection", Category: "Economy", Population: "NA", Score: $('#econRange').val() },
+			        	{ County: "My-Selection", Category: "Education", Population: "NA", Score: $('#eduRange').val() },
+			        	{ County: "My-Selection", Category: "Health", Population: "NA", Score: $('#healthRange').val() },
+			        	{ County: "My-Selection", Category: "Opportunity", Population: "NA", Score: $('#oppRange').val() }
 			        ];
 		newData.forEach(entry => {
 			data.push(entry);

@@ -305,6 +305,7 @@ th {
   display: inline-block;
   margin: 0 auto;
   width: 90%;
+  /*border: 1px solid black;*/
 }
 
 .tableau-container {
