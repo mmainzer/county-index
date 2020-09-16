@@ -293,22 +293,63 @@ th {
   font-weight: bold;
 }
 
+#actualScoreLabel {
+  color: #00bcf1;
+}
+
+#guessScoreLabel {
+  color: #fdb714;
+}
+
 #chartContainer {
-  display: none;
+  display: inline-block;
   margin: 0 auto;
   width: 90%;
-  border: 1px solid black;
 }
 
 .tableau-container {
-  margin-left: 10%;
-  margin-right: 10%;
   margin-bottom: 2rem;
   /*display: none;*/
   opacity: 0;
+  width: 100%;
+  margin-left: 10vw;
+
+}
+
+.tableauPlaceholder {
+  width: 100%;
 }
 
 .table-container {
   margin-top: 2rem;
   display: none;
+}
+
+.popup {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  text-align: left;
+  min-width: 225px;
+  border: solid 1px #4d4d4d;
+  border-radius: 2px;
+}
+
+.popup-header {
+  padding-top: 4px;
+  font-size: 16px;
+  font-family: jaf-bernina-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.popup-description {
+  font-family: jaf-bernina-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.popup-content {
+  padding-left: 4px;
 }
