@@ -239,8 +239,132 @@ th {
   padding-left: 10px;
 }
 
+/*css for slider*/
+/*input[type=range]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0  0;
+  border-radius: 50%;
+  background: #37adbf;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0  0;
+  border-radius: 50%;
+  background: #37adbf;
+  cursor: pointer;
+  border: 0 !important;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0  0;
+  border-radius: 50%;
+  background: #37adbf;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.range {
+  position: relative;
+  width: 90%;
+  height: 5px;
+  margin: auto;
+}
+
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+
+.range input:focus {
+  background: none;
+  outline: none;
+}*/
+
+/*Labels below slider*/
+/*.range-labels {
+  margin-top: 18px;
+
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.range-labels .active {
+  color: #37adbf;
+}
+
+.range-labels .selected::before {
+  background: #37adbf;
+}
+
+.range-labels .active.selected::before {
+  display: none;
+}
+
+.range-labels li {
+    position: relative;
+    float: left;
+    width: 90.25px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 14px;
+    cursor: pointer;
+}
+    
+.range-labels li::before {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  content: "";
+  margin: 0 auto;
+  width: 9px;
+  height: 9px;
+  background: #b2b2b2;
+  border-radius: 50%;
+}*/
+
+/*end slider styling*/
+
 .slider-val-container {
   text-align: center;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .button-container {
@@ -274,7 +398,7 @@ th {
 }
 
 .score-label {
-  font-size: 80px;
+  font-size: 40px;
 }
 
 .score-explain {
@@ -353,4 +477,7 @@ th {
 
 .popup-content {
   padding-left: 4px;
+}
+.axis text {
+  font-size: 1.2em;
 }

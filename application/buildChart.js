@@ -8,7 +8,7 @@ let svg = d3
 
 d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/final/scoresTable.csv').then((data) => {
 
-	console.log(data);
+	let radius = 12;
 	let categories = Array.from(new Set(data.map((d) => d.Category)));
 
 	let yCoords = categories.map((d, i) => (height*0.17) + i * (height*0.17));
@@ -28,10 +28,19 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	// const y = d3.scaleBand().rangeRound([0, height]);
 	
 
-	// const yAxisLeft = d3.axisLeft(y).tickSize(0);
+	const yAxisLeft = d3.axisLeft(yScale).tickSize(0);
 
 	// const yAxisRight = d3.axisRight(y).tickSizeOuter(0).tickSizeInner(-width);
 
+
+	svg.append("g")
+			.attr("class", "axis y left")
+			.call(yAxisLeft)
+		.selectAll(".tick text")
+		    .attr("dy", "1em")
+			.attr("dx", -radius)
+			.attr("fill", "black")
+			.style("fill", "black");
 
 	// create a way to hover over the dots to get their attributes
 	let tooltip = d3.select("body")
@@ -65,13 +74,27 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	    .attr("cx", (d) => xScale(d.Score))
 	    .attr("cy", (d) => yScale(d.Category));
 
+	
+
 	$("#scoreSubmit").click(function(){
         score = ( ( $('#econRange').val() * 0.3 ) + ( $('#eduRange').val() * 0.3 ) + ( $('#healthRange').val() * 0.2 ) + ( $('#oppRange').val() * 0.2 ) );
 		score = score.toFixed(1);
-        $('#guessScoreLabel').text(score);
+
+		// the guessed score needs to be assigned a category as a placeholder
+
+		// you don't need the difference displayed - just under/over estimated or correct
+
+		// each component score needs to be 
+        
         county = $("#select2-fill-select-container").text();
-        let actual = scoresObj[county].Composite;
+        let actual = scoresObj[county].CompQ;
+        console.log(score, actual);
         let difference = ( actual - score ).toFixed(1);
+        console.log(difference);
+
+
+        
+
         county = county.replace(/\s/g , "-");
         if (difference > 0 ) {
         	$("#scorePlace").text("underestimated");
@@ -85,18 +108,105 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
         $("."+county).attr("fill", "rgba(0, 188, 241, 0.6)");
 
         // console.log(data);
+        let compScore;
+        let econScore;
+        let eduScore;
+        let healthScore;
+        let oppScore;
+        let scoreLabel;
+        let actualLabel;
+
+        if (score <= 1.5) {
+        	compScore = 38.7;
+        	scoreLabel = "Lowest Quintile";
+        } else if (score <= 2.5) {
+        	compScore = 47.2;
+        	scoreLabel = "Second Quintile";
+        } else if (score <= 3.5) {
+        	compScore = 50.8;
+        	scoreLabel = "Middle Quintile";
+        } else if (score <= 4.5) {
+        	compScore = 56.4;
+        	scoreLabel = "Fourth Quintile";
+        } else {
+        	compScore = 73.5;
+        	scoreLabel = "Highest Quintile";
+        }
+
+        if (actual <= 1.5) {
+        	actualLabel = "Lowest Quintile";
+        } else if (actual <= 2.5) {
+        	actualLabel = "Second Quintile";
+        } else if (actual <= 3.5) {
+        	actualLabel = "Middle Quintile";
+        } else if (actual <= 4.5) {
+        	actualLabel = "Fourth Quintile";
+        } else {
+        	actualLabel = "Highest Quintile";
+        }
+
+        if ($('#econRange').val() <= 1.5) {
+        	econScore = 25.8;
+        } else if ($('#econRange').val() <= 2.5) {
+        	econScore = 42;
+        } else if ($('#econRange').val() <= 3.5) {
+        	econScore = 48;
+        } else if ($('#econRange').val() <= 4.5) {
+        	econScore = 54;
+        } else {
+        	econScore = 55;
+        }
+
+        if ($('#eduRange').val() <= 1.5) {
+        	eduScore = 34;
+        } else if ($('#eduRange').val() <= 2.5) {
+        	eduScore = 49.8;
+        } else if ($('#eduRange').val() <= 3.5) {
+        	eduScore = 54;
+        } else if ($('#eduRange').val() <= 4.5) {
+        	eduScore = 59.5;
+        } else {
+        	eduScore = 78;
+        }
+
+        if ($('#healthRange').val() <= 1.5) {
+        	healthScore = 21;
+        } else if ($('#healthRange').val() <= 2.5) {
+        	healthScore = 35;
+        } else if ($('#healthRange').val() <= 3.5) {
+        	healthScore = 43;
+        } else if ($('#healthRange').val() <= 4.5) {
+        	healthScore = 49.5;
+        } else {
+        	healthScore = 75;
+        }
+
+        if ($('#oppRange').val() <= 1.5) {
+        	oppScore = 38;
+        } else if ($('#oppRange').val() <= 2.5) {
+        	oppScore = 56;
+        } else if ($('#oppRange').val() <= 3.5) {
+        	oppScore = 63.5;
+        } else if ($('#oppRange').val() <= 4.5) {
+        	oppScore = 71;
+        } else {
+        	oppScore = 81;
+        }
+
+
+
         // create an object for the new scores
         let newData = [
-			        	{ County: "My-Selection", Category: "Composite", Population: "NA", Score: score },
-			        	{ County: "My-Selection", Category: "Economy", Population: "NA", Score: $('#econRange').val() },
-			        	{ County: "My-Selection", Category: "Education", Population: "NA", Score: $('#eduRange').val() },
-			        	{ County: "My-Selection", Category: "Health", Population: "NA", Score: $('#healthRange').val() },
-			        	{ County: "My-Selection", Category: "Opportunity", Population: "NA", Score: $('#oppRange').val() }
+			        	{ County: "My-Selection", Category: "Composite", Population: "NA", Score: compScore },
+			        	{ County: "My-Selection", Category: "Economy", Population: "NA", Score: econScore },
+			        	{ County: "My-Selection", Category: "Education", Population: "NA", Score: eduScore },
+			        	{ County: "My-Selection", Category: "Health", Population: "NA", Score: healthScore },
+			        	{ County: "My-Selection", Category: "Opportunity", Population: "NA", Score: oppScore }
 			        ];
 		newData.forEach(entry => {
 			data.push(entry);
 		});
-		// console.log(newData);
+		console.log(newData);
 
 		svg.selectAll('.circ')
 		.data(newData)
@@ -126,8 +236,8 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 		        });
 
 
-        $("#differenceLabel").text(Math.abs( difference ) + " points");
-        $('#actualScoreLabel').text(actual);
+        $('#guessScoreLabel').text(scoreLabel);
+        $('#actualScoreLabel').text(actualLabel);
         $('.results-container').show();
         $('#chartContainer').css('display','inline-block');
         $('.table-container').show();
