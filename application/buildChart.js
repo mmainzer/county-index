@@ -28,7 +28,7 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	// const y = d3.scaleBand().rangeRound([0, height]);
 	
 
-	const yAxisLeft = d3.axisLeft(yScale).tickSize(0);
+	const yAxisLeft = d3.axisLeft(yScale);
 
 	// const yAxisRight = d3.axisRight(y).tickSizeOuter(0).tickSizeInner(-width);
 
