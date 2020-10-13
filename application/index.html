@@ -28,13 +28,26 @@
 
 <body>
 
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="https://www.dca.ga.gov/local-government-assistance/partnerships/georgia-academy-economic-development" target="_blank">
+      <img src="../assets/images/logos/academyHorizontal.svg" height="50" class="d-inline-block align-top" alt="">
+    </a>
+    <div class="links">
+      <a class="navbar-brand" href="https://mmainzer.github.io/county-index/application/index.html">Home</a>
+      <a class="navbar-brand" href="https://public.tableau.com/views/GACountyIndex_16026080380910/CountyScorecard?%3Aembed=y&amp;%3AshowVizHome=no&amp;%3Adisplay_count=y&amp;%3Adisplay_static_image=y&amp;%3AbootstrapWhenNotified=true&amp;%3Alanguage=en&amp;publish=yes&amp;:embed=y&amp;:showVizHome=n&amp;:apiID=host0#navType=0&amp;navSrc=Parse" target="_blank">Data</a>
+      <a class="navbar-brand" href="https://mmainzer.github.io/county-index/application/partners.html">Partners</a>
+    </div>
+    
+  </nav>
+
   <main id="site-content">
     <article id="interactive" class="interactive">
 
       <header id="interactive-header" class="interactive-header">
-        <div id="company-logo-header">
+        <!-- <div id="company-logo-header">
           <img class="gpc-logo" src="../assets/images/gpc-logo-horizontal.svg">
-        </div>
+        </div> -->
         <h1 id="interactive-heading" class="interactive-heading">
           Assessing Community Vitality in Georgia
         </h1>
@@ -54,7 +67,7 @@
           <!-- <h3 class="caption-heading">This is a caption heading for a graphic</h3> -->
           <div class="graphic-container">
             <!-- This is where a graphic (svg or image) will go -->
-            <img class="gpc-logo img-fluid" alt="Responsive image" src="../assets/images/banner-2.jpg">
+            <img class="gpc-logo img-fluid" alt="Responsive image" src="../assets/images/groupPhotoBanner.JPG">
           </div>
         </div>
       </div>
@@ -291,11 +304,11 @@
                 <h5 for="formControlRange">Economy</h5>
                 <div class="slider-container"><input type="range" class="form-control-range" min="1" max="5" step="1" value="3" id="econRange"></div>
                 <div class="slider-val-container">
-                  <h5 class='slider-val' id="econVal">1</h5>
-                  <h5 class='slider-val' id="econVal">2</h5>
-                  <h5 class='slider-val' id="econVal">3</h5>
-                  <h5 class='slider-val' id="econVal">4</h5>
-                  <h5 class='slider-val' id="econVal">5</h5>
+                  <h5 class='slider-val' id="econVal">Weak</h5>
+                  <h5 class='slider-val' id="econVal">Below Avg</h5>
+                  <h5 class='slider-val' id="econVal">Average</h5>
+                  <h5 class='slider-val' id="econVal">Above Avg</h5>
+                  <h5 class='slider-val' id="econVal">Strong</h5>
                 </div>
               </div>
             </form>
@@ -304,11 +317,11 @@
                 <h5 for="formControlRange">Education</h5>
                 <div class="slider-container"><input type="range" class="form-control-range" min="1" max="5" step="1" value="3" id="eduRange"></div>
                 <div class="slider-val-container">
-                  <h5 class='slider-val' id="eduVal">1</h5>
-                  <h5 class='slider-val' id="eduVal">2</h5>
-                  <h5 class='slider-val' id="eduVal">3</h5>
-                  <h5 class='slider-val' id="eduVal">4</h5>
-                  <h5 class='slider-val' id="eduVal">5</h5>
+                  <h5 class='slider-val' id="eduVal">Weak</h5>
+                  <h5 class='slider-val' id="eduVal">Below Avg</h5>
+                  <h5 class='slider-val' id="eduVal">Average</h5>
+                  <h5 class='slider-val' id="eduVal">Above Avg</h5>
+                  <h5 class='slider-val' id="eduVal">Strong</h5>
                 </div>
               </div>
             </form>
@@ -317,11 +330,11 @@
                 <h5 for="formControlRange">Health</h5>
                 <div class="slider-container"><input type="range" class="form-control-range" min="1" max="5" step="1" value="3" id="healthRange"></div>
                 <div class="slider-val-container">
-                  <h5 class='slider-val' id="healthVal">1</h5>
-                  <h5 class='slider-val' id="healthVal">2</h5>
-                  <h5 class='slider-val' id="healthVal">3</h5>
-                  <h5 class='slider-val' id="healthVal">4</h5>
-                  <h5 class='slider-val' id="healthVal">5</h5>
+                  <h5 class='slider-val' id="healthVal">Weak</h5>
+                  <h5 class='slider-val' id="healthVal">Below Avg</h5>
+                  <h5 class='slider-val' id="healthVal">Average</h5>
+                  <h5 class='slider-val' id="healthVal">Above Avg</h5>
+                  <h5 class='slider-val' id="healthVal">Strong</h5>
                 </div>
               </div>
             </form>
@@ -330,11 +343,11 @@
                 <h5 for="formControlRange">Opportunity</h5>
                 <div class="slider-container"><input type="range" class="form-control-range" min="1" max="5" step="1" value="3" id="oppRange"></div>
                 <div class="slider-val-container">
-                  <h5 class='slider-val' id="oppVal">1</h5>
-                  <h5 class='slider-val' id="oppVal">2</h5>
-                  <h5 class='slider-val' id="oppVal">3</h5>
-                  <h5 class='slider-val' id="oppVal">4</h5>
-                  <h5 class='slider-val' id="oppVal">5</h5>
+                  <h5 class='slider-val' id="oppVal">Weak</h5>
+                  <h5 class='slider-val' id="oppVal">Below Avg</h5>
+                  <h5 class='slider-val' id="oppVal">Average</h5>
+                  <h5 class='slider-val' id="oppVal">Above Avg</h5>
+                  <h5 class='slider-val' id="oppVal">Strong</h5>
                 </div>
               </div>
             </form>
@@ -347,14 +360,20 @@
         <div class="container results-container">
           <div class="row">
             <div class="col score-labels"><h5>Your Assessment</h5><h1 id='guessScoreLabel' class='score-label'>81</h1></div>
-            <div class="col score-explain"><p id="scoreExplain">You <span id="scorePlace">overestimated</span> your county's score. Use the tool below to explore the data</p></div>
-            <div class="col score-labels"><h5>Actual Score</h5><h1 id='actualScoreLabel' class='score-label'>81</h1></div>
+            <div class="col score-explain"><p id="scoreExplain">You <span id="scorePlace">overestimated</span> your county's performance. Use the tool below to explore the data</p></div>
+            <div class="col score-labels"><h5>Actual Performance</h5><h1 id='actualScoreLabel' class='score-label'>81</h1></div>
           </div>
         </div>
 
         <div class="container" style="margin: 0 auto; text-align: center;">
           <div id="chartContainer" class="graphic-container">
-            
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-4"><h3 class="chart-title">←  Struggling</h3></div>
+              <div class="col-2"></div>
+              <div class="col-4"><h3 class="chart-title">High Performing  →</h3></div>
+              <div class="col-1"></div>
+            </div>
           </div>
         </div>
 

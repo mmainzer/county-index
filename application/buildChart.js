@@ -17,7 +17,7 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	let xScale = d3
 					.scaleLinear()
 					.domain(d3.extent(data.map((d) => +d['Score'])))
-					.range([50, width - 50]);
+					.range([110, width-50]);
 
 	let color = d3.scaleOrdinal().domain(categories).range(d3.schemePaired);
 
@@ -29,18 +29,26 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	
 
 	const yAxisLeft = d3.axisLeft(yScale);
+	const yAxisRight = d3.axisRight(yScale).tickSizeOuter(0).tickSizeInner(-width+(width*0.091));
 
 	// const yAxisRight = d3.axisRight(y).tickSizeOuter(0).tickSizeInner(-width);
 
 
 	svg.append("g")
+			.attr("transform", `translate(90,0)`)
 			.attr("class", "axis y left")
 			.call(yAxisLeft)
-		.selectAll(".tick text")
-		    .attr("dy", "1em")
-			.attr("dx", -radius)
-			.attr("fill", "black")
-			.style("fill", "black");
+			.append("text")
+				.attr("x", -90)
+		        .attr("y", 10)
+		        .attr("fill", "none")
+		        .attr("text-anchor", "start")
+
+	svg.append("g")
+			.attr("transform", "translate("+width+",0)")
+			.attr("class", "axis y right")
+			.call(yAxisRight)
+
 
 	// create a way to hover over the dots to get their attributes
 	let tooltip = d3.select("body")
@@ -73,6 +81,14 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	    .attr( "r", 7 )
 	    .attr("cx", (d) => xScale(d.Score))
 	    .attr("cy", (d) => yScale(d.Category));
+
+	// put a title at the top of the svg
+	svg.append("text")
+		.attr("class", "chart-title")
+		.attr("x", width/2)
+		.attr("y", 0 )
+		.attr("text-anchor","middle")
+		.text("Title Here")
 
 	
 
@@ -118,31 +134,31 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 
         if (score <= 1.5) {
         	compScore = 38.7;
-        	scoreLabel = "Lowest Quintile";
+        	scoreLabel = "Weak";
         } else if (score <= 2.5) {
         	compScore = 47.2;
-        	scoreLabel = "Second Quintile";
+        	scoreLabel = "Below Avg";
         } else if (score <= 3.5) {
         	compScore = 50.8;
-        	scoreLabel = "Middle Quintile";
+        	scoreLabel = "Average";
         } else if (score <= 4.5) {
         	compScore = 56.4;
-        	scoreLabel = "Fourth Quintile";
+        	scoreLabel = "Above Avg";
         } else {
         	compScore = 73.5;
-        	scoreLabel = "Highest Quintile";
+        	scoreLabel = "Strong";
         }
 
         if (actual <= 1.5) {
-        	actualLabel = "Lowest Quintile";
+        	actualLabel = "Weak";
         } else if (actual <= 2.5) {
-        	actualLabel = "Second Quintile";
+        	actualLabel = "Below Avg";
         } else if (actual <= 3.5) {
-        	actualLabel = "Middle Quintile";
+        	actualLabel = "Average";
         } else if (actual <= 4.5) {
-        	actualLabel = "Fourth Quintile";
+        	actualLabel = "Above Avg";
         } else {
-        	actualLabel = "Highest Quintile";
+        	actualLabel = "Strong";
         }
 
         if ($('#econRange').val() <= 1.5) {

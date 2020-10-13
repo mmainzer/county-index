@@ -67,6 +67,24 @@ header {
   margin-top: 45px;
 }
 
+.bg-light {
+  background: white !important;
+  border-bottom: 1.5px solid #00bcf1;
+}
+
+.logo-container {
+  padding-top: 3rem;
+}
+
+.logos-row {
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.col-img {
+  text-align: center;
+}
+
 #company-logo-header {
   margin-left: calc((100% - 600px) / 2);
   margin-right: auto;
@@ -479,5 +497,27 @@ input[type=range]::-ms-track {
   padding-left: 4px;
 }
 .axis text {
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+
+.tick line {
+  color: #fff;
+}
+
+.right line {
+  color: #e8e8e8;
+  stroke-width: 10px;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  padding-bottom: 0;
+}
+
+.titleContainer {
+  display: inline-flex;
+}
+
+.title-text {
+  display: inline-flex;
 }

@@ -1,0 +1,130 @@
+<!-- This is a template for displaying a webmap side-by-side with a table, or other graphic-->
+<!-- The map and table/graphic are linked together by various event listeners triggered by the user -->
+<!-- The purpose is to have something highly performant, customizable, and easily used in a browser -->
+<!-- The goal is to be as professional looking as possible, with similar styles across applications -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Georgia Power County Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name='robots' content='noindex, nofollow'>
+
+  <!-- mapbox -->
+  <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>   -->
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-html5-1.6.2/datatables.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/jxl7wvr.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="https://www.dca.ga.gov/local-government-assistance/partnerships/georgia-academy-economic-development" target="_blank">
+      <img src="../assets/images/logos/academyHorizontal.svg" height="50" class="d-inline-block align-top" alt="">
+    </a>
+    <div class="links">
+      <a class="navbar-brand" href="https://mmainzer.github.io/county-index/application/index.html">Home</a>
+      <a class="navbar-brand" href="https://public.tableau.com/views/GACountyIndex_16026080380910/CountyScorecard?%3Aembed=y&amp;%3AshowVizHome=no&amp;%3Adisplay_count=y&amp;%3Adisplay_static_image=y&amp;%3AbootstrapWhenNotified=true&amp;%3Alanguage=en&amp;publish=yes&amp;:embed=y&amp;:showVizHome=n&amp;:apiID=host0#navType=0&amp;navSrc=Parse" target="_blank">Data</a>
+      <a class="navbar-brand" href="https://mmainzer.github.io/county-index/application/partners.html">Partners</a>
+    </div>
+    
+  </nav>
+
+  <main id="site-content">
+    <article id="interactive" class="interactive">
+
+      <header id="interactive-header" class="interactive-header">
+        <!-- <div id="company-logo-header">
+          <img class="gpc-logo" src="../assets/images/gpc-logo-horizontal.svg">
+        </div> -->
+        <h1 id="interactive-heading" class="interactive-heading">
+          Thanks to Our Partners
+        </h1>
+        <div class="interactive-byline-container">
+          <!-- <p id="interactive-byline">With so many data points, it's difficult to know where to focus. Our county index tool can help simplify this process.</p> -->
+        </div>
+
+      </header>
+      
+    </article>
+  </main>
+
+  <div class="container-fluid logo-container">
+    <div class="row logos-row">
+      <div class="col col-img">
+        <img src="../assets/images/logos/gpcHorizontal.svg" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/accg.jpg" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/gaEconDev.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row logos-row">
+      <div class="col col-img">
+        <img src="../assets/images/logos/gaTechGold.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/gaDeptCommAffairs.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/gacceHorizontal.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row logos-row">
+      <div class="col col-img">
+        <img src="../assets/images/logos/geda.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/gaChamber.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/tcsgHorizontal.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row logos-row">
+      <div class="col col-img">
+        <img src="../assets/images/logos/ugaHorizontal.jpg" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/gaEmc.jpg" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/ecgHorizontal.png" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col col-img">
+        <img src="../assets/images/logos/aglHorizontal.svg" width="300" height="99" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+  </div>
+
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- CSV2GEOJSON FOR HANDLING POINT FILES -->
+<!-- <script src='https://npmcdn.com/csv2geojson@5.1.1/csv2geojson.js'></script> -->
+<!-- TURF FOR SPATIAL ANALYSIS AND FUNCTIONS IF NECESSARY -->
+<!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> -->
+<!-- DATATABLES FOR EASILY EXPORTABLE AND SORTABLE HTML TABLES -->
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-html5-1.6.2/datatables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="events.js"></script>
+<script type="text/javascript" src="buildChart.js"></script>
+
+</body>
+
+</html>
