@@ -1,56 +1,56 @@
 scoresObj = {
   "Appling County": {
-    "Composite": 51.3,
+    "Composite": 49,
     "Economy": 51.9,
-    "Education": 47.3,
+    "Education": 39.5,
     "Health": 36.7,
     "Opportunity": 71.1,
     "HealthQ": 2,
-    "EduQ": 1,
+    "EduQ": 2,
     "EconQ": 4,
     "OppQ": 4,
     "CompQ": 3
   },
   "Atkinson County": {
-    "Composite": 45.6,
+    "Composite": 43.2,
     "Economy": 58.6,
-    "Education": 47.4,
+    "Education": 39.3,
     "Health": 9.2,
     "Opportunity": 60,
     "HealthQ": 1,
-    "EduQ": 1,
+    "EduQ": 2,
     "EconQ": 5,
     "OppQ": 2,
-    "CompQ": 1
+    "CompQ": 2
   },
   "Bacon County": {
-    "Composite": 49.6,
+    "Composite": 48.2,
     "Economy": 53.1,
-    "Education": 53.1,
+    "Education": 48.5,
     "Health": 28.6,
     "Opportunity": 59.9,
     "HealthQ": 1,
-    "EduQ": 3,
+    "EduQ": 4,
     "EconQ": 4,
     "OppQ": 2,
     "CompQ": 3
   },
   "Baker County": {
-    "Composite": 47.2,
+    "Composite": 44.1,
     "Economy": 37.3,
-    "Education": 52.2,
+    "Education": 41.9,
     "Health": 34.3,
     "Opportunity": 67.3,
     "HealthQ": 2,
-    "EduQ": 3,
+    "EduQ": 2,
     "EconQ": 1,
     "OppQ": 4,
     "CompQ": 2
   },
   "Baldwin County": {
-    "Composite": 50,
+    "Composite": 47.8,
     "Economy": 39.3,
-    "Education": 59.5,
+    "Education": 52.1,
     "Health": 48.3,
     "Opportunity": 53.4,
     "HealthQ": 4,
@@ -60,9 +60,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Banks County": {
-    "Composite": 52.7,
+    "Composite": 49.2,
     "Economy": 56.9,
-    "Education": 45.5,
+    "Education": 33.8,
     "Health": 33.9,
     "Opportunity": 76,
     "HealthQ": 2,
@@ -72,21 +72,21 @@ scoresObj = {
     "CompQ": 3
   },
   "Barrow County": {
-    "Composite": 60.1,
+    "Composite": 57.2,
     "Economy": 66.1,
-    "Education": 56.8,
+    "Education": 47,
     "Health": 39.3,
     "Opportunity": 77,
     "HealthQ": 3,
-    "EduQ": 4,
+    "EduQ": 3,
     "EconQ": 5,
     "OppQ": 5,
-    "CompQ": 5
+    "CompQ": 4
   },
   "Bartow County": {
-    "Composite": 57.5,
+    "Composite": 55,
     "Economy": 55.7,
-    "Education": 56.2,
+    "Education": 48,
     "Health": 46.2,
     "Opportunity": 73.3,
     "HealthQ": 4,
@@ -96,9 +96,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Ben Hill County": {
-    "Composite": 39.7,
+    "Composite": 37,
     "Economy": 33.3,
-    "Education": 48.4,
+    "Education": 39.3,
     "Health": 32,
     "Opportunity": 44,
     "HealthQ": 2,
@@ -108,9 +108,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Berrien County": {
-    "Composite": 44.6,
+    "Composite": 41.4,
     "Economy": 43.2,
-    "Education": 49.3,
+    "Education": 38.8,
     "Health": 17.5,
     "Opportunity": 66.5,
     "HealthQ": 1,
@@ -120,33 +120,33 @@ scoresObj = {
     "CompQ": 1
   },
   "Bibb County": {
-    "Composite": 53.4,
+    "Composite": 48.6,
     "Economy": 46.1,
-    "Education": 57.9,
+    "Education": 41.8,
     "Health": 59.8,
     "Opportunity": 51,
     "HealthQ": 5,
-    "EduQ": 4,
+    "EduQ": 2,
     "EconQ": 3,
     "OppQ": 1,
-    "CompQ": 4
+    "CompQ": 3
   },
   "Bleckley County": {
-    "Composite": 52.2,
+    "Composite": 50.5,
     "Economy": 34.1,
-    "Education": 59.4,
+    "Education": 53.8,
     "Health": 46.9,
     "Opportunity": 73.7,
     "HealthQ": 4,
     "EduQ": 4,
     "EconQ": 1,
     "OppQ": 4,
-    "CompQ": 3
+    "CompQ": 4
   },
   "Brantley County": {
-    "Composite": 43,
+    "Composite": 39.6,
     "Economy": 45.1,
-    "Education": 43.7,
+    "Education": 32.2,
     "Health": 20.2,
     "Opportunity": 61.7,
     "HealthQ": 1,
@@ -156,9 +156,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Brooks County": {
-    "Composite": 46.7,
+    "Composite": 45,
     "Economy": 48.7,
-    "Education": 53.2,
+    "Education": 47.6,
     "Health": 27.9,
     "Opportunity": 52.8,
     "HealthQ": 1,
@@ -168,9 +168,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Bryan County": {
-    "Composite": 69.1,
+    "Composite": 66.6,
     "Economy": 70.2,
-    "Education": 73.8,
+    "Education": 65.2,
     "Health": 58.9,
     "Opportunity": 70.7,
     "HealthQ": 5,
@@ -180,21 +180,21 @@ scoresObj = {
     "CompQ": 5
   },
   "Bulloch County": {
-    "Composite": 54.6,
+    "Composite": 49.9,
     "Economy": 52.9,
-    "Education": 59.8,
+    "Education": 44.2,
     "Health": 51.1,
     "Opportunity": 52.8,
     "HealthQ": 4,
-    "EduQ": 4,
+    "EduQ": 3,
     "EconQ": 4,
     "OppQ": 1,
-    "CompQ": 4
+    "CompQ": 3
   },
   "Burke County": {
-    "Composite": 52.9,
+    "Composite": 50.9,
     "Economy": 60.8,
-    "Education": 53.2,
+    "Education": 46.5,
     "Health": 34.1,
     "Opportunity": 59.5,
     "HealthQ": 2,
@@ -204,9 +204,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Butts County": {
-    "Composite": 47,
+    "Composite": 43.1,
     "Economy": 51,
-    "Education": 44.8,
+    "Education": 31.8,
     "Health": 36.2,
     "Opportunity": 55,
     "HealthQ": 2,
@@ -216,21 +216,21 @@ scoresObj = {
     "CompQ": 2
   },
   "Calhoun County": {
-    "Composite": 42.9,
+    "Composite": 40.9,
     "Economy": 36.8,
-    "Education": 50.7,
+    "Education": 44.1,
     "Health": 33,
     "Opportunity": 50.2,
     "HealthQ": 2,
-    "EduQ": 2,
+    "EduQ": 3,
     "EconQ": 1,
     "OppQ": 1,
     "CompQ": 1
   },
   "Camden County": {
-    "Composite": 58.9,
+    "Composite": 57.8,
     "Economy": 47.8,
-    "Education": 66.3,
+    "Education": 62.7,
     "Health": 52.7,
     "Opportunity": 70.7,
     "HealthQ": 5,
@@ -240,9 +240,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Candler County": {
-    "Composite": 46.8,
+    "Composite": 45.3,
     "Economy": 53,
-    "Education": 56.8,
+    "Education": 51.7,
     "Health": 25.2,
     "Opportunity": 44.2,
     "HealthQ": 1,
@@ -252,9 +252,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Carroll County": {
-    "Composite": 57.2,
+    "Composite": 55.6,
     "Economy": 55.2,
-    "Education": 58.4,
+    "Education": 53.1,
     "Health": 43.6,
     "Opportunity": 72,
     "HealthQ": 3,
@@ -264,9 +264,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Catoosa County": {
-    "Composite": 62.6,
+    "Composite": 59.6,
     "Economy": 54.9,
-    "Education": 60.6,
+    "Education": 50.9,
     "Health": 52.7,
     "Opportunity": 86.7,
     "HealthQ": 5,
@@ -276,13 +276,13 @@ scoresObj = {
     "CompQ": 5
   },
   "Charlton County": {
-    "Composite": 50.6,
+    "Composite": 48.4,
     "Economy": 38.4,
-    "Education": 50.6,
+    "Education": 43.4,
     "Health": 41.7,
     "Opportunity": 77.8,
     "HealthQ": 3,
-    "EduQ": 2,
+    "EduQ": 3,
     "EconQ": 1,
     "OppQ": 5,
     "CompQ": 3
@@ -290,43 +290,43 @@ scoresObj = {
   "Chatham County": {
     "Composite": 60.4,
     "Economy": 57.3,
-    "Education": 61.5,
+    "Education": 61.4,
     "Health": 60.1,
     "Opportunity": 63.8,
     "HealthQ": 5,
-    "EduQ": 4,
+    "EduQ": 5,
     "EconQ": 4,
     "OppQ": 3,
     "CompQ": 5
   },
   "Chattahoochee County": {
-    "Composite": 49.8,
+    "Composite": 44.2,
     "Economy": 18.9,
-    "Education": 64.5,
+    "Education": 46,
     "Health": 63.9,
     "Opportunity": 59.9,
     "HealthQ": 5,
-    "EduQ": 5,
+    "EduQ": 3,
     "EconQ": 1,
     "OppQ": 2,
-    "CompQ": 3
+    "CompQ": 2
   },
   "Chattooga County": {
-    "Composite": 44.9,
+    "Composite": 42.6,
     "Economy": 40,
-    "Education": 46.5,
+    "Education": 39,
     "Health": 23.2,
     "Opportunity": 71.4,
     "HealthQ": 1,
-    "EduQ": 1,
+    "EduQ": 2,
     "EconQ": 2,
     "OppQ": 4,
-    "CompQ": 1
+    "CompQ": 2
   },
   "Cherokee County": {
-    "Composite": 72.9,
+    "Composite": 69.9,
     "Economy": 71,
-    "Education": 74.2,
+    "Education": 64.2,
     "Health": 60.3,
     "Opportunity": 86.3,
     "HealthQ": 5,
@@ -336,9 +336,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Clarke County": {
-    "Composite": 58,
+    "Composite": 53.7,
     "Economy": 53.9,
-    "Education": 74.1,
+    "Education": 59.7,
     "Health": 56.9,
     "Opportunity": 41.2,
     "HealthQ": 5,
@@ -348,9 +348,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Clay County": {
-    "Composite": 32.1,
+    "Composite": 27.5,
     "Economy": 21.6,
-    "Education": 44.5,
+    "Education": 29.1,
     "Health": 19.2,
     "Opportunity": 42.2,
     "HealthQ": 1,
@@ -360,21 +360,21 @@ scoresObj = {
     "CompQ": 1
   },
   "Clayton County": {
-    "Composite": 47.5,
+    "Composite": 41.1,
     "Economy": 53.6,
-    "Education": 48.6,
+    "Education": 27.4,
     "Health": 30.7,
     "Opportunity": 53.3,
     "HealthQ": 1,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 4,
     "OppQ": 2,
-    "CompQ": 2
+    "CompQ": 1
   },
   "Clinch County": {
-    "Composite": 37,
+    "Composite": 34.3,
     "Economy": 45.8,
-    "Education": 48.9,
+    "Education": 40,
     "Health": 14.1,
     "Opportunity": 28.7,
     "HealthQ": 1,
@@ -384,9 +384,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Cobb County": {
-    "Composite": 73.6,
+    "Composite": 70.6,
     "Economy": 64.2,
-    "Education": 83.6,
+    "Education": 73.5,
     "Health": 66,
     "Opportunity": 80.5,
     "HealthQ": 5,
@@ -396,33 +396,33 @@ scoresObj = {
     "CompQ": 5
   },
   "Coffee County": {
-    "Composite": 48.7,
+    "Composite": 45.8,
     "Economy": 47.9,
-    "Education": 49.4,
+    "Education": 39.5,
     "Health": 30.3,
     "Opportunity": 67.4,
     "HealthQ": 1,
     "EduQ": 2,
     "EconQ": 3,
     "OppQ": 4,
-    "CompQ": 3
+    "CompQ": 2
   },
   "Colquitt County": {
-    "Composite": 44.2,
+    "Composite": 42,
     "Economy": 53.2,
-    "Education": 47.7,
+    "Education": 40.5,
     "Health": 18.4,
     "Opportunity": 51,
     "HealthQ": 1,
-    "EduQ": 1,
+    "EduQ": 2,
     "EconQ": 4,
     "OppQ": 1,
-    "CompQ": 1
+    "CompQ": 2
   },
   "Columbia County": {
-    "Composite": 77.4,
+    "Composite": 75.5,
     "Economy": 66.2,
-    "Education": 77.8,
+    "Education": 71.5,
     "Health": 84.2,
     "Opportunity": 86.7,
     "HealthQ": 5,
@@ -432,9 +432,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Cook County": {
-    "Composite": 49.4,
+    "Composite": 46.6,
     "Economy": 51.2,
-    "Education": 53.1,
+    "Education": 43.9,
     "Health": 34.3,
     "Opportunity": 56.2,
     "HealthQ": 2,
@@ -444,33 +444,33 @@ scoresObj = {
     "CompQ": 3
   },
   "Coweta County": {
-    "Composite": 66.8,
+    "Composite": 63.7,
     "Economy": 64.3,
-    "Education": 65.5,
+    "Education": 55.2,
     "Health": 62.1,
     "Opportunity": 77.4,
     "HealthQ": 5,
-    "EduQ": 5,
+    "EduQ": 4,
     "EconQ": 5,
     "OppQ": 5,
     "CompQ": 5
   },
   "Crawford County": {
-    "Composite": 47.7,
+    "Composite": 40,
     "Economy": 48.9,
-    "Education": 40.1,
+    "Education": 14.6,
     "Health": 38.4,
     "Opportunity": 66.5,
     "HealthQ": 2,
     "EduQ": 1,
     "EconQ": 3,
     "OppQ": 3,
-    "CompQ": 2
+    "CompQ": 1
   },
   "Crisp County": {
-    "Composite": 47,
+    "Composite": 44,
     "Economy": 45.6,
-    "Education": 49.2,
+    "Education": 39.5,
     "Health": 46.3,
     "Opportunity": 46.3,
     "HealthQ": 4,
@@ -480,21 +480,21 @@ scoresObj = {
     "CompQ": 2
   },
   "Dade County": {
-    "Composite": 56.1,
+    "Composite": 51.5,
     "Economy": 52.7,
-    "Education": 50.5,
+    "Education": 35.2,
     "Health": 40.9,
     "Opportunity": 84.9,
     "HealthQ": 3,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 4,
     "OppQ": 5,
     "CompQ": 4
   },
   "Dawson County": {
-    "Composite": 69.2,
+    "Composite": 68.2,
     "Economy": 63,
-    "Education": 71.3,
+    "Education": 68,
     "Health": 58.2,
     "Opportunity": 86.4,
     "HealthQ": 5,
@@ -504,9 +504,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Decatur County": {
-    "Composite": 44.4,
+    "Composite": 40.8,
     "Economy": 43.8,
-    "Education": 50.9,
+    "Education": 39.1,
     "Health": 31.9,
     "Opportunity": 47.8,
     "HealthQ": 1,
@@ -516,45 +516,45 @@ scoresObj = {
     "CompQ": 1
   },
   "DeKalb County": {
-    "Composite": 63.9,
+    "Composite": 58.1,
     "Economy": 53.3,
-    "Education": 72.3,
+    "Education": 53,
     "Health": 69.9,
     "Opportunity": 61.3,
     "HealthQ": 5,
-    "EduQ": 5,
+    "EduQ": 4,
     "EconQ": 4,
     "OppQ": 3,
     "CompQ": 5
   },
   "Dodge County": {
-    "Composite": 48.5,
+    "Composite": 46.2,
     "Economy": 31.9,
-    "Education": 53.5,
+    "Education": 45.9,
     "Health": 45.3,
     "Opportunity": 68.9,
     "HealthQ": 3,
     "EduQ": 3,
     "EconQ": 1,
     "OppQ": 4,
-    "CompQ": 2
+    "CompQ": 3
   },
   "Dooly County": {
-    "Composite": 47.2,
+    "Composite": 43.4,
     "Economy": 42,
-    "Education": 49.1,
+    "Education": 36.5,
     "Health": 43.1,
     "Opportunity": 56.1,
     "HealthQ": 3,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 2,
     "OppQ": 2,
     "CompQ": 2
   },
   "Dougherty County": {
-    "Composite": 46.5,
+    "Composite": 43.4,
     "Economy": 37.6,
-    "Education": 59.2,
+    "Education": 48.9,
     "Health": 42.7,
     "Opportunity": 44.5,
     "HealthQ": 3,
@@ -564,25 +564,25 @@ scoresObj = {
     "CompQ": 2
   },
   "Douglas County": {
-    "Composite": 61.9,
+    "Composite": 58.9,
     "Economy": 59,
-    "Education": 64.8,
+    "Education": 55,
     "Health": 48.4,
     "Opportunity": 75.2,
     "HealthQ": 4,
-    "EduQ": 5,
+    "EduQ": 4,
     "EconQ": 5,
     "OppQ": 5,
     "CompQ": 5
   },
   "Early County": {
-    "Composite": 47.7,
+    "Composite": 44.1,
     "Economy": 46.2,
-    "Education": 51.6,
+    "Education": 39.7,
     "Health": 35.3,
     "Opportunity": 56.6,
     "HealthQ": 2,
-    "EduQ": 3,
+    "EduQ": 2,
     "EconQ": 3,
     "OppQ": 2,
     "CompQ": 2
@@ -594,15 +594,15 @@ scoresObj = {
     "Health": 34.2,
     "Opportunity": 49.7,
     "HealthQ": 2,
-    "EduQ": 2,
+    "EduQ": 4,
     "EconQ": 3,
     "OppQ": 1,
-    "CompQ": 2
+    "CompQ": 3
   },
   "Effingham County": {
-    "Composite": 62.9,
+    "Composite": 60.6,
     "Economy": 62.9,
-    "Education": 58.8,
+    "Education": 51.3,
     "Health": 46.7,
     "Opportunity": 85.1,
     "HealthQ": 4,
@@ -612,9 +612,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Elbert County": {
-    "Composite": 49.5,
+    "Composite": 47.2,
     "Economy": 42.1,
-    "Education": 50.1,
+    "Education": 42.6,
     "Health": 41.4,
     "Opportunity": 67.5,
     "HealthQ": 3,
@@ -624,21 +624,21 @@ scoresObj = {
     "CompQ": 3
   },
   "Emanuel County": {
-    "Composite": 42.2,
+    "Composite": 38.3,
     "Economy": 38.3,
-    "Education": 48.6,
+    "Education": 35.6,
     "Health": 24.2,
     "Opportunity": 56.6,
     "HealthQ": 1,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 1,
     "OppQ": 2,
     "CompQ": 1
   },
   "Evans County": {
-    "Composite": 51.8,
+    "Composite": 49.3,
     "Economy": 50,
-    "Education": 54,
+    "Education": 45.8,
     "Health": 37.4,
     "Opportunity": 65.5,
     "HealthQ": 2,
@@ -648,21 +648,21 @@ scoresObj = {
     "CompQ": 3
   },
   "Fannin County": {
-    "Composite": 60.4,
+    "Composite": 58.9,
     "Economy": 58.1,
-    "Education": 61.7,
+    "Education": 56.9,
     "Health": 52.6,
     "Opportunity": 69.4,
     "HealthQ": 4,
-    "EduQ": 4,
+    "EduQ": 5,
     "EconQ": 5,
     "OppQ": 4,
     "CompQ": 5
   },
   "Fayette County": {
-    "Composite": 80.8,
+    "Composite": 78.5,
     "Economy": 60.7,
-    "Education": 88.1,
+    "Education": 80.4,
     "Health": 90.2,
     "Opportunity": 90.6,
     "HealthQ": 5,
@@ -672,9 +672,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Floyd County": {
-    "Composite": 58.9,
+    "Composite": 57.3,
     "Economy": 49.2,
-    "Education": 59.9,
+    "Education": 54.7,
     "Health": 63.1,
     "Opportunity": 67.8,
     "HealthQ": 5,
@@ -684,9 +684,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Forsyth County": {
-    "Composite": 83.7,
+    "Composite": 82.5,
     "Economy": 76.7,
-    "Education": 93.1,
+    "Education": 88.9,
     "Health": 70.6,
     "Opportunity": 93.2,
     "HealthQ": 5,
@@ -696,21 +696,21 @@ scoresObj = {
     "CompQ": 5
   },
   "Franklin County": {
-    "Composite": 47.9,
+    "Composite": 45.7,
     "Economy": 52.4,
-    "Education": 51,
+    "Education": 43.7,
     "Health": 26.9,
     "Opportunity": 57.6,
     "HealthQ": 1,
-    "EduQ": 2,
+    "EduQ": 3,
     "EconQ": 4,
     "OppQ": 2,
     "CompQ": 2
   },
   "Fulton County": {
-    "Composite": 71,
+    "Composite": 68.5,
     "Economy": 60.7,
-    "Education": 82.3,
+    "Education": 73.8,
     "Health": 75,
     "Opportunity": 65.7,
     "HealthQ": 5,
@@ -720,21 +720,21 @@ scoresObj = {
     "CompQ": 5
   },
   "Gilmer County": {
-    "Composite": 42.3,
+    "Composite": 52.1,
     "Economy": 50.3,
-    "Education": 19.1,
+    "Education": 51.6,
     "Health": 38,
     "Opportunity": 69.6,
     "HealthQ": 2,
-    "EduQ": 1,
+    "EduQ": 4,
     "EconQ": 3,
     "OppQ": 4,
-    "CompQ": 1
+    "CompQ": 4
   },
   "Glascock County": {
-    "Composite": 54.9,
+    "Composite": 52.9,
     "Economy": 47.4,
-    "Education": 53.5,
+    "Education": 46.9,
     "Health": 41.2,
     "Opportunity": 81.9,
     "HealthQ": 3,
@@ -744,9 +744,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Glynn County": {
-    "Composite": 60,
+    "Composite": 58.3,
     "Economy": 55.9,
-    "Education": 70.7,
+    "Education": 65,
     "Health": 48.1,
     "Opportunity": 62.3,
     "HealthQ": 4,
@@ -756,21 +756,21 @@ scoresObj = {
     "CompQ": 5
   },
   "Gordon County": {
-    "Composite": 55.5,
+    "Composite": 54.2,
     "Economy": 56.4,
-    "Education": 53.7,
+    "Education": 49.2,
     "Health": 40.5,
     "Opportunity": 72,
     "HealthQ": 3,
-    "EduQ": 3,
+    "EduQ": 4,
     "EconQ": 4,
     "OppQ": 4,
     "CompQ": 4
   },
   "Grady County": {
-    "Composite": 49.2,
+    "Composite": 46.6,
     "Economy": 50.1,
-    "Education": 53.4,
+    "Education": 44.5,
     "Health": 35.6,
     "Opportunity": 55.2,
     "HealthQ": 2,
@@ -780,9 +780,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Greene County": {
-    "Composite": 54.8,
+    "Composite": 51,
     "Economy": 52.8,
-    "Education": 62.1,
+    "Education": 49.4,
     "Health": 51,
     "Opportunity": 50.8,
     "HealthQ": 4,
@@ -792,9 +792,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Gwinnett County": {
-    "Composite": 66.6,
+    "Composite": 62.4,
     "Economy": 65.4,
-    "Education": 71.5,
+    "Education": 57.8,
     "Health": 57.5,
     "Opportunity": 70,
     "HealthQ": 5,
@@ -804,9 +804,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Habersham County": {
-    "Composite": 56.8,
+    "Composite": 55,
     "Economy": 51.4,
-    "Education": 58.3,
+    "Education": 52.3,
     "Health": 45.5,
     "Opportunity": 73.7,
     "HealthQ": 3,
@@ -816,21 +816,21 @@ scoresObj = {
     "CompQ": 4
   },
   "Hall County": {
-    "Composite": 62.2,
+    "Composite": 59.1,
     "Economy": 64.5,
-    "Education": 58.8,
+    "Education": 48.3,
     "Health": 51.4,
     "Opportunity": 74.9,
     "HealthQ": 4,
-    "EduQ": 4,
+    "EduQ": 3,
     "EconQ": 5,
     "OppQ": 4,
     "CompQ": 5
   },
   "Hancock County": {
-    "Composite": 36.5,
+    "Composite": 31.8,
     "Economy": 26.7,
-    "Education": 43.8,
+    "Education": 28.1,
     "Health": 50.6,
     "Opportunity": 26.3,
     "HealthQ": 4,
@@ -840,21 +840,21 @@ scoresObj = {
     "CompQ": 1
   },
   "Haralson County": {
-    "Composite": 55.5,
+    "Composite": 55.1,
     "Economy": 49.8,
-    "Education": 56.8,
+    "Education": 55.7,
     "Health": 40.7,
     "Opportunity": 76.7,
     "HealthQ": 3,
-    "EduQ": 4,
+    "EduQ": 5,
     "EconQ": 3,
     "OppQ": 5,
     "CompQ": 4
   },
   "Harris County": {
-    "Composite": 69.6,
+    "Composite": 68,
     "Economy": 57.5,
-    "Education": 71.8,
+    "Education": 66.5,
     "Health": 67.9,
     "Opportunity": 86.1,
     "HealthQ": 5,
@@ -864,9 +864,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Hart County": {
-    "Composite": 55.5,
+    "Composite": 54.3,
     "Economy": 53.2,
-    "Education": 57.7,
+    "Education": 53.6,
     "Health": 51.9,
     "Opportunity": 59.5,
     "HealthQ": 4,
@@ -876,21 +876,21 @@ scoresObj = {
     "CompQ": 4
   },
   "Heard County": {
-    "Composite": 48.7,
+    "Composite": 44.7,
     "Economy": 45.3,
-    "Education": 45.6,
+    "Education": 32.4,
     "Health": 30,
     "Opportunity": 76.9,
     "HealthQ": 1,
     "EduQ": 1,
     "EconQ": 3,
     "OppQ": 5,
-    "CompQ": 3
+    "CompQ": 2
   },
   "Henry County": {
-    "Composite": 64.5,
+    "Composite": 61.5,
     "Economy": 60.3,
-    "Education": 66.5,
+    "Education": 56.4,
     "Health": 55.1,
     "Opportunity": 77.5,
     "HealthQ": 5,
@@ -900,9 +900,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Houston County": {
-    "Composite": 61.3,
+    "Composite": 58.5,
     "Economy": 53.7,
-    "Education": 66,
+    "Education": 56.6,
     "Health": 53,
     "Opportunity": 73.9,
     "HealthQ": 5,
@@ -912,21 +912,21 @@ scoresObj = {
     "CompQ": 5
   },
   "Irwin County": {
-    "Composite": 47.5,
+    "Composite": 46.4,
     "Economy": 37,
-    "Education": 65.1,
+    "Education": 61.3,
     "Health": 29.3,
     "Opportunity": 55.1,
     "HealthQ": 1,
     "EduQ": 5,
     "EconQ": 1,
     "OppQ": 2,
-    "CompQ": 2
+    "CompQ": 3
   },
   "Jackson County": {
-    "Composite": 66.3,
+    "Composite": 65.3,
     "Economy": 68.7,
-    "Education": 63.6,
+    "Education": 60.3,
     "Health": 53,
     "Opportunity": 80,
     "HealthQ": 5,
@@ -936,9 +936,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Jasper County": {
-    "Composite": 50.1,
+    "Composite": 46.3,
     "Economy": 54.7,
-    "Education": 44.5,
+    "Education": 32,
     "Health": 41.4,
     "Opportunity": 60.3,
     "HealthQ": 3,
@@ -948,9 +948,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Jeff Davis County": {
-    "Composite": 49.6,
+    "Composite": 47,
     "Economy": 43.8,
-    "Education": 51.3,
+    "Education": 42.6,
     "Health": 25.5,
     "Opportunity": 79.7,
     "HealthQ": 1,
@@ -960,9 +960,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Jefferson County": {
-    "Composite": 43.3,
+    "Composite": 40.1,
     "Economy": 40.2,
-    "Education": 47.3,
+    "Education": 36.9,
     "Health": 26,
     "Opportunity": 59.1,
     "HealthQ": 1,
@@ -972,9 +972,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Jenkins County": {
-    "Composite": 40.4,
+    "Composite": 35.4,
     "Economy": 43.9,
-    "Education": 38.4,
+    "Education": 21.7,
     "Health": 31.8,
     "Opportunity": 46.6,
     "HealthQ": 1,
@@ -984,9 +984,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Johnson County": {
-    "Composite": 47.2,
+    "Composite": 44.4,
     "Economy": 43,
-    "Education": 46.2,
+    "Education": 36.8,
     "Health": 37.4,
     "Opportunity": 64.9,
     "HealthQ": 2,
@@ -996,33 +996,33 @@ scoresObj = {
     "CompQ": 2
   },
   "Jones County": {
-    "Composite": 59.9,
+    "Composite": 55.7,
     "Economy": 56.7,
-    "Education": 57.1,
+    "Education": 43.2,
     "Health": 51.4,
     "Opportunity": 77.2,
     "HealthQ": 4,
-    "EduQ": 4,
+    "EduQ": 2,
     "EconQ": 4,
     "OppQ": 5,
     "CompQ": 4
   },
   "Lamar County": {
-    "Composite": 48.7,
+    "Composite": 44.8,
     "Economy": 47.7,
-    "Education": 51.9,
+    "Education": 38.7,
     "Health": 35.4,
     "Opportunity": 59,
     "HealthQ": 2,
-    "EduQ": 3,
+    "EduQ": 2,
     "EconQ": 3,
     "OppQ": 2,
-    "CompQ": 3
+    "CompQ": 2
   },
   "Lanier County": {
-    "Composite": 46.6,
+    "Composite": 42.8,
     "Economy": 44.7,
-    "Education": 51.4,
+    "Education": 38.9,
     "Health": 31.9,
     "Opportunity": 56.8,
     "HealthQ": 2,
@@ -1032,9 +1032,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Laurens County": {
-    "Composite": 51.5,
+    "Composite": 48.5,
     "Economy": 42.5,
-    "Education": 53.9,
+    "Education": 43.9,
     "Health": 52.5,
     "Opportunity": 60.5,
     "HealthQ": 4,
@@ -1044,9 +1044,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Lee County": {
-    "Composite": 67,
+    "Composite": 64.8,
     "Economy": 58.6,
-    "Education": 68.7,
+    "Education": 61.5,
     "Health": 61.3,
     "Opportunity": 82.8,
     "HealthQ": 5,
@@ -1056,9 +1056,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Liberty County": {
-    "Composite": 50.5,
+    "Composite": 47.7,
     "Economy": 42.4,
-    "Education": 58.7,
+    "Education": 49.2,
     "Health": 46,
     "Opportunity": 54.9,
     "HealthQ": 3,
@@ -1068,9 +1068,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Lincoln County": {
-    "Composite": 48.5,
+    "Composite": 44.9,
     "Economy": 46.6,
-    "Education": 45.7,
+    "Education": 33.6,
     "Health": 49.3,
     "Opportunity": 54.8,
     "HealthQ": 4,
@@ -1080,9 +1080,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Long County": {
-    "Composite": 56.4,
+    "Composite": 53.4,
     "Economy": 65,
-    "Education": 53.8,
+    "Education": 43.6,
     "Health": 42.4,
     "Opportunity": 61.5,
     "HealthQ": 3,
@@ -1092,9 +1092,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Lowndes County": {
-    "Composite": 53.9,
+    "Composite": 51.5,
     "Economy": 50.1,
-    "Education": 65.7,
+    "Education": 57.5,
     "Health": 42,
     "Opportunity": 54.1,
     "HealthQ": 3,
@@ -1104,9 +1104,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Lumpkin County": {
-    "Composite": 62.1,
+    "Composite": 61,
     "Economy": 60.5,
-    "Education": 68.1,
+    "Education": 64.6,
     "Health": 51.6,
     "Opportunity": 65.9,
     "HealthQ": 4,
@@ -1116,9 +1116,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Macon County": {
-    "Composite": 35.4,
+    "Composite": 31.8,
     "Economy": 31.7,
-    "Education": 44.6,
+    "Education": 32.5,
     "Health": 16.8,
     "Opportunity": 45.7,
     "HealthQ": 1,
@@ -1128,9 +1128,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Madison County": {
-    "Composite": 57.1,
+    "Composite": 55.9,
     "Economy": 54,
-    "Education": 59.2,
+    "Education": 55,
     "Health": 38.7,
     "Opportunity": 77.2,
     "HealthQ": 3,
@@ -1140,9 +1140,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Marion County": {
-    "Composite": 47.7,
+    "Composite": 44.1,
     "Economy": 41.4,
-    "Education": 49.1,
+    "Education": 37.3,
     "Health": 42,
     "Opportunity": 60.6,
     "HealthQ": 3,
@@ -1152,21 +1152,21 @@ scoresObj = {
     "CompQ": 2
   },
   "McDuffie County": {
-    "Composite": 45.1,
+    "Composite": 40.9,
     "Economy": 40.9,
-    "Education": 48.4,
+    "Education": 34.3,
     "Health": 39.6,
     "Opportunity": 52,
     "HealthQ": 3,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 2,
     "OppQ": 1,
     "CompQ": 1
   },
   "McIntosh County": {
-    "Composite": 48.4,
+    "Composite": 42.8,
     "Economy": 39.3,
-    "Education": 46.6,
+    "Education": 28,
     "Health": 48.9,
     "Opportunity": 64.3,
     "HealthQ": 4,
@@ -1176,21 +1176,21 @@ scoresObj = {
     "CompQ": 2
   },
   "Meriwether County": {
-    "Composite": 45.7,
+    "Composite": 41.5,
     "Economy": 43.8,
-    "Education": 43.9,
+    "Education": 29.9,
     "Health": 36.7,
     "Opportunity": 60.1,
     "HealthQ": 2,
     "EduQ": 1,
     "EconQ": 2,
     "OppQ": 2,
-    "CompQ": 2
+    "CompQ": 1
   },
   "Miller County": {
-    "Composite": 46.4,
+    "Composite": 42.3,
     "Economy": 54.7,
-    "Education": 47.7,
+    "Education": 34.2,
     "Health": 30.1,
     "Opportunity": 48.1,
     "HealthQ": 1,
@@ -1200,9 +1200,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Mitchell County": {
-    "Composite": 41.7,
+    "Composite": 39.1,
     "Economy": 35.7,
-    "Education": 52,
+    "Education": 43.4,
     "Health": 27.6,
     "Opportunity": 49.3,
     "HealthQ": 1,
@@ -1212,21 +1212,21 @@ scoresObj = {
     "CompQ": 1
   },
   "Monroe County": {
-    "Composite": 59.3,
+    "Composite": 56,
     "Economy": 57.5,
-    "Education": 58.5,
+    "Education": 47.5,
     "Health": 55.2,
     "Opportunity": 67.1,
     "HealthQ": 5,
-    "EduQ": 4,
+    "EduQ": 3,
     "EconQ": 5,
     "OppQ": 4,
     "CompQ": 4
   },
   "Montgomery County": {
-    "Composite": 49.3,
+    "Composite": 48.1,
     "Economy": 38.2,
-    "Education": 58,
+    "Education": 53.7,
     "Health": 35.3,
     "Opportunity": 67.1,
     "HealthQ": 2,
@@ -1236,33 +1236,33 @@ scoresObj = {
     "CompQ": 3
   },
   "Morgan County": {
-    "Composite": 51.8,
+    "Composite": 61.6,
     "Economy": 57.9,
-    "Education": 22.9,
+    "Education": 55.7,
     "Health": 55.6,
     "Opportunity": 82.2,
     "HealthQ": 5,
-    "EduQ": 1,
+    "EduQ": 5,
     "EconQ": 5,
     "OppQ": 5,
-    "CompQ": 3
+    "CompQ": 5
   },
   "Murray County": {
-    "Composite": 46.8,
+    "Composite": 45.7,
     "Economy": 39.2,
-    "Education": 48.2,
+    "Education": 44.3,
     "Health": 29.2,
     "Opportunity": 73.8,
     "HealthQ": 1,
-    "EduQ": 1,
+    "EduQ": 3,
     "EconQ": 1,
     "OppQ": 4,
     "CompQ": 2
   },
   "Muscogee County": {
-    "Composite": 54,
+    "Composite": 51,
     "Economy": 42.7,
-    "Education": 65.2,
+    "Education": 55.3,
     "Health": 53.9,
     "Opportunity": 54.2,
     "HealthQ": 5,
@@ -1272,21 +1272,21 @@ scoresObj = {
     "CompQ": 4
   },
   "Newton County": {
-    "Composite": 57,
+    "Composite": 53.9,
     "Economy": 57.1,
-    "Education": 58.2,
+    "Education": 47.7,
     "Health": 47.7,
     "Opportunity": 64.5,
     "HealthQ": 4,
-    "EduQ": 4,
+    "EduQ": 3,
     "EconQ": 4,
     "OppQ": 3,
     "CompQ": 4
   },
   "Oconee County": {
-    "Composite": 86.5,
+    "Composite": 85.9,
     "Economy": 69.7,
-    "Education": 91.5,
+    "Education": 89.6,
     "Health": 96.8,
     "Opportunity": 93.8,
     "HealthQ": 5,
@@ -1296,9 +1296,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Oglethorpe County": {
-    "Composite": 58.3,
+    "Composite": 57.1,
     "Economy": 53.9,
-    "Education": 58.4,
+    "Education": 54.3,
     "Health": 46.6,
     "Opportunity": 76.5,
     "HealthQ": 4,
@@ -1308,33 +1308,33 @@ scoresObj = {
     "CompQ": 4
   },
   "Paulding County": {
-    "Composite": 65.2,
+    "Composite": 62.6,
     "Economy": 65,
-    "Education": 63.4,
+    "Education": 54.6,
     "Health": 52,
     "Opportunity": 81.4,
     "HealthQ": 4,
-    "EduQ": 5,
+    "EduQ": 4,
     "EconQ": 5,
     "OppQ": 5,
     "CompQ": 5
   },
   "Peach County": {
-    "Composite": 49.3,
+    "Composite": 45.6,
     "Economy": 45.5,
-    "Education": 54.7,
+    "Education": 42.4,
     "Health": 31.9,
     "Opportunity": 64.3,
     "HealthQ": 2,
-    "EduQ": 3,
+    "EduQ": 2,
     "EconQ": 3,
     "OppQ": 3,
-    "CompQ": 3
+    "CompQ": 2
   },
   "Pickens County": {
-    "Composite": 64.9,
+    "Composite": 63.2,
     "Economy": 61.4,
-    "Education": 64.7,
+    "Education": 59.2,
     "Health": 51,
     "Opportunity": 84.2,
     "HealthQ": 4,
@@ -1344,9 +1344,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Pierce County": {
-    "Composite": 50.8,
+    "Composite": 47.5,
     "Economy": 52.9,
-    "Education": 49.8,
+    "Education": 39,
     "Health": 34.6,
     "Opportunity": 65.2,
     "HealthQ": 2,
@@ -1356,21 +1356,21 @@ scoresObj = {
     "CompQ": 3
   },
   "Pike County": {
-    "Composite": 57.1,
+    "Composite": 55.6,
     "Economy": 55.5,
-    "Education": 56.3,
+    "Education": 51.5,
     "Health": 41.3,
     "Opportunity": 76.3,
     "HealthQ": 3,
-    "EduQ": 3,
+    "EduQ": 4,
     "EconQ": 4,
     "OppQ": 5,
     "CompQ": 4
   },
   "Polk County": {
-    "Composite": 48.4,
+    "Composite": 44.2,
     "Economy": 50,
-    "Education": 45.5,
+    "Education": 31.4,
     "Health": 31.7,
     "Opportunity": 67,
     "HealthQ": 1,
@@ -1380,9 +1380,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Pulaski County": {
-    "Composite": 51.7,
+    "Composite": 48.7,
     "Economy": 41.8,
-    "Education": 50.7,
+    "Education": 41,
     "Health": 54.5,
     "Opportunity": 64.9,
     "HealthQ": 5,
@@ -1392,9 +1392,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Putnam County": {
-    "Composite": 55.4,
+    "Composite": 53.6,
     "Economy": 43.1,
-    "Education": 66.5,
+    "Education": 60.5,
     "Health": 48.1,
     "Opportunity": 64.5,
     "HealthQ": 4,
@@ -1404,9 +1404,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Quitman County": {
-    "Composite": 39.2,
+    "Composite": 35.1,
     "Economy": 38.4,
-    "Education": 44.6,
+    "Education": 31,
     "Health": 29.1,
     "Opportunity": 42.5,
     "HealthQ": 1,
@@ -1416,9 +1416,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Rabun County": {
-    "Composite": 55.8,
+    "Composite": 53.8,
     "Economy": 49.9,
-    "Education": 62.5,
+    "Education": 55.8,
     "Health": 41.9,
     "Opportunity": 68.5,
     "HealthQ": 3,
@@ -1428,33 +1428,33 @@ scoresObj = {
     "CompQ": 4
   },
   "Randolph County": {
-    "Composite": 40.9,
+    "Composite": 37.1,
     "Economy": 36,
-    "Education": 48.2,
+    "Education": 35.7,
     "Health": 36.2,
     "Opportunity": 41.9,
     "HealthQ": 2,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 1,
     "OppQ": 1,
     "CompQ": 1
   },
   "Richmond County": {
-    "Composite": 49.4,
+    "Composite": 43.6,
     "Economy": 43.9,
-    "Education": 51.6,
+    "Education": 32.2,
     "Health": 51.2,
     "Opportunity": 52.5,
     "HealthQ": 4,
-    "EduQ": 3,
+    "EduQ": 1,
     "EconQ": 2,
     "OppQ": 1,
-    "CompQ": 3
+    "CompQ": 2
   },
   "Rockdale County": {
-    "Composite": 59.8,
+    "Composite": 55.8,
     "Economy": 56.2,
-    "Education": 62.1,
+    "Education": 48.9,
     "Health": 54.6,
     "Opportunity": 66.8,
     "HealthQ": 5,
@@ -1464,33 +1464,33 @@ scoresObj = {
     "CompQ": 4
   },
   "Schley County": {
-    "Composite": 52.2,
+    "Composite": 49.9,
     "Economy": 44,
-    "Education": 56.8,
+    "Education": 49.2,
     "Health": 44.8,
     "Opportunity": 64.7,
     "HealthQ": 3,
-    "EduQ": 3,
+    "EduQ": 4,
     "EconQ": 2,
     "OppQ": 3,
     "CompQ": 3
   },
   "Screven County": {
-    "Composite": 44.2,
+    "Composite": 40.4,
     "Economy": 36.2,
-    "Education": 48.9,
+    "Education": 36.5,
     "Health": 33.4,
     "Opportunity": 59.8,
     "HealthQ": 2,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 1,
     "OppQ": 2,
     "CompQ": 1
   },
   "Seminole County": {
-    "Composite": 47.4,
+    "Composite": 44.2,
     "Economy": 38.1,
-    "Education": 48.7,
+    "Education": 38.1,
     "Health": 51.5,
     "Opportunity": 55.1,
     "HealthQ": 4,
@@ -1500,21 +1500,21 @@ scoresObj = {
     "CompQ": 2
   },
   "Spalding County": {
-    "Composite": 48.2,
+    "Composite": 45.8,
     "Economy": 48,
-    "Education": 55.3,
+    "Education": 47.2,
     "Health": 37.8,
     "Opportunity": 48.3,
     "HealthQ": 2,
     "EduQ": 3,
     "EconQ": 3,
     "OppQ": 1,
-    "CompQ": 2
+    "CompQ": 3
   },
   "Stephens County": {
-    "Composite": 54.6,
+    "Composite": 52.6,
     "Economy": 46.1,
-    "Education": 58.9,
+    "Education": 52.1,
     "Health": 41.3,
     "Opportunity": 74.3,
     "HealthQ": 3,
@@ -1524,9 +1524,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Stewart County": {
-    "Composite": 41,
+    "Composite": 40.2,
     "Economy": 39.2,
-    "Education": 57,
+    "Education": 54.6,
     "Health": 38.6,
     "Opportunity": 21.8,
     "HealthQ": 3,
@@ -1536,9 +1536,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Sumter County": {
-    "Composite": 47.6,
+    "Composite": 44.5,
     "Economy": 38.7,
-    "Education": 56.4,
+    "Education": 46.1,
     "Health": 41.6,
     "Opportunity": 53.6,
     "HealthQ": 3,
@@ -1548,13 +1548,13 @@ scoresObj = {
     "CompQ": 2
   },
   "Talbot County": {
-    "Composite": 48,
+    "Composite": 44,
     "Economy": 39.1,
-    "Education": 51.8,
+    "Education": 38.3,
     "Health": 46.9,
     "Opportunity": 56.9,
     "HealthQ": 4,
-    "EduQ": 3,
+    "EduQ": 2,
     "EconQ": 1,
     "OppQ": 2,
     "CompQ": 2
@@ -1566,15 +1566,15 @@ scoresObj = {
     "Health": 33.7,
     "Opportunity": 35.8,
     "HealthQ": 2,
-    "EduQ": 1,
+    "EduQ": 3,
     "EconQ": 1,
     "OppQ": 1,
     "CompQ": 1
   },
   "Tattnall County": {
-    "Composite": 48.3,
+    "Composite": 45.7,
     "Economy": 42.9,
-    "Education": 48.5,
+    "Education": 39.5,
     "Health": 36.6,
     "Opportunity": 68.1,
     "HealthQ": 2,
@@ -1584,9 +1584,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Taylor County": {
-    "Composite": 38.8,
+    "Composite": 33.3,
     "Economy": 36.1,
-    "Education": 42.1,
+    "Education": 23.9,
     "Health": 23.3,
     "Opportunity": 53.5,
     "HealthQ": 1,
@@ -1596,9 +1596,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Telfair County": {
-    "Composite": 37.1,
+    "Composite": 35,
     "Economy": 14.6,
-    "Education": 48.4,
+    "Education": 41.5,
     "Health": 48.9,
     "Opportunity": 42,
     "HealthQ": 4,
@@ -1608,9 +1608,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Terrell County": {
-    "Composite": 37,
+    "Composite": 33.6,
     "Economy": 37.5,
-    "Education": 50.8,
+    "Education": 39.4,
     "Health": 19.5,
     "Opportunity": 33.1,
     "HealthQ": 1,
@@ -1620,45 +1620,45 @@ scoresObj = {
     "CompQ": 1
   },
   "Thomas County": {
-    "Composite": 54.3,
+    "Composite": 50.5,
     "Economy": 44.4,
-    "Education": 59.5,
+    "Education": 46.8,
     "Health": 53.5,
     "Opportunity": 62.1,
     "HealthQ": 5,
-    "EduQ": 4,
+    "EduQ": 3,
     "EconQ": 2,
     "OppQ": 3,
     "CompQ": 4
   },
   "Tift County": {
-    "Composite": 53.7,
+    "Composite": 49.8,
     "Economy": 51.1,
-    "Education": 55.7,
+    "Education": 42.6,
     "Health": 44.6,
     "Opportunity": 63.9,
     "HealthQ": 3,
-    "EduQ": 3,
+    "EduQ": 2,
     "EconQ": 3,
     "OppQ": 3,
-    "CompQ": 4
+    "CompQ": 3
   },
   "Toombs County": {
-    "Composite": 49.9,
+    "Composite": 48.3,
     "Economy": 44.8,
-    "Education": 54.6,
+    "Education": 49,
     "Health": 39.7,
     "Opportunity": 60.8,
     "HealthQ": 3,
-    "EduQ": 3,
+    "EduQ": 4,
     "EconQ": 3,
     "OppQ": 3,
     "CompQ": 3
   },
   "Towns County": {
-    "Composite": 61,
+    "Composite": 60.4,
     "Economy": 44.6,
-    "Education": 71,
+    "Education": 69.1,
     "Health": 59.8,
     "Opportunity": 71.8,
     "HealthQ": 5,
@@ -1668,21 +1668,21 @@ scoresObj = {
     "CompQ": 5
   },
   "Treutlen County": {
-    "Composite": 44.1,
+    "Composite": 39.8,
     "Economy": 37.9,
-    "Education": 49.1,
+    "Education": 34.7,
     "Health": 27.1,
     "Opportunity": 62.9,
     "HealthQ": 1,
-    "EduQ": 2,
+    "EduQ": 1,
     "EconQ": 1,
     "OppQ": 3,
     "CompQ": 1
   },
   "Troup County": {
-    "Composite": 56.1,
+    "Composite": 53,
     "Economy": 61.5,
-    "Education": 56.2,
+    "Education": 45.8,
     "Health": 46.6,
     "Opportunity": 57.3,
     "HealthQ": 4,
@@ -1692,9 +1692,9 @@ scoresObj = {
     "CompQ": 4
   },
   "Turner County": {
-    "Composite": 42.3,
+    "Composite": 40.2,
     "Economy": 40.5,
-    "Education": 53.1,
+    "Education": 46.2,
     "Health": 29.3,
     "Opportunity": 41.6,
     "HealthQ": 1,
@@ -1704,9 +1704,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Twiggs County": {
-    "Composite": 39.5,
+    "Composite": 37.1,
     "Economy": 38.6,
-    "Education": 44.7,
+    "Education": 36.7,
     "Health": 17.7,
     "Opportunity": 54.9,
     "HealthQ": 1,
@@ -1716,9 +1716,9 @@ scoresObj = {
     "CompQ": 1
   },
   "Union County": {
-    "Composite": 69.6,
+    "Composite": 69.5,
     "Economy": 62.4,
-    "Education": 65.7,
+    "Education": 65.3,
     "Health": 70.7,
     "Opportunity": 85,
     "HealthQ": 5,
@@ -1728,9 +1728,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Upson County": {
-    "Composite": 50.4,
+    "Composite": 48.2,
     "Economy": 44.8,
-    "Education": 55,
+    "Education": 47.8,
     "Health": 38.5,
     "Opportunity": 63.9,
     "HealthQ": 2,
@@ -1740,9 +1740,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Walker County": {
-    "Composite": 52.8,
+    "Composite": 50.3,
     "Economy": 48.7,
-    "Education": 54.2,
+    "Education": 46.1,
     "Health": 35.5,
     "Opportunity": 73.9,
     "HealthQ": 2,
@@ -1752,9 +1752,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Walton County": {
-    "Composite": 61.5,
+    "Composite": 59.2,
     "Economy": 62.1,
-    "Education": 60.1,
+    "Education": 52.3,
     "Health": 50.2,
     "Opportunity": 74.3,
     "HealthQ": 4,
@@ -1764,9 +1764,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Ware County": {
-    "Composite": 50.1,
+    "Composite": 46.8,
     "Economy": 47.6,
-    "Education": 49.6,
+    "Education": 38.5,
     "Health": 43.5,
     "Opportunity": 61.2,
     "HealthQ": 3,
@@ -1776,9 +1776,9 @@ scoresObj = {
     "CompQ": 3
   },
   "Warren County": {
-    "Composite": 46.2,
+    "Composite": 42.8,
     "Economy": 51.6,
-    "Education": 50.9,
+    "Education": 39.7,
     "Health": 36.9,
     "Opportunity": 40.4,
     "HealthQ": 2,
@@ -1788,9 +1788,9 @@ scoresObj = {
     "CompQ": 2
   },
   "Washington County": {
-    "Composite": 48.1,
+    "Composite": 45.6,
     "Economy": 38.1,
-    "Education": 50.8,
+    "Education": 42.7,
     "Health": 50.8,
     "Opportunity": 56.3,
     "HealthQ": 4,
@@ -1800,16 +1800,16 @@ scoresObj = {
     "CompQ": 2
   },
   "Wayne County": {
-    "Composite": 48.6,
+    "Composite": 47.2,
     "Economy": 41.7,
-    "Education": 55,
+    "Education": 50,
     "Health": 27.7,
     "Opportunity": 70.5,
     "HealthQ": 1,
-    "EduQ": 3,
+    "EduQ": 4,
     "EconQ": 2,
     "OppQ": 4,
-    "CompQ": 2
+    "CompQ": 3
   },
   "Webster County": {
     "Composite": 53.8,
@@ -1818,15 +1818,15 @@ scoresObj = {
     "Health": 50.5,
     "Opportunity": 66.9,
     "HealthQ": 4,
-    "EduQ": 4,
+    "EduQ": 5,
     "EconQ": 2,
     "OppQ": 4,
     "CompQ": 4
   },
   "Wheeler County": {
-    "Composite": 35.7,
+    "Composite": 33.2,
     "Economy": 16.4,
-    "Education": 45.3,
+    "Education": 37,
     "Health": 34.9,
     "Opportunity": 51.2,
     "HealthQ": 2,
@@ -1836,9 +1836,9 @@ scoresObj = {
     "CompQ": 1
   },
   "White County": {
-    "Composite": 64.2,
+    "Composite": 62.4,
     "Economy": 69.4,
-    "Education": 58.4,
+    "Education": 52.5,
     "Health": 51.5,
     "Opportunity": 77.7,
     "HealthQ": 4,
@@ -1848,9 +1848,9 @@ scoresObj = {
     "CompQ": 5
   },
   "Whitfield County": {
-    "Composite": 52,
+    "Composite": 48.5,
     "Economy": 47.5,
-    "Education": 46.8,
+    "Education": 34.9,
     "Health": 45.7,
     "Opportunity": 73,
     "HealthQ": 3,
@@ -1860,21 +1860,21 @@ scoresObj = {
     "CompQ": 3
   },
   "Wilcox County": {
-    "Composite": 43,
+    "Composite": 40.7,
     "Economy": 32.3,
-    "Education": 47.5,
+    "Education": 39.9,
     "Health": 32.9,
     "Opportunity": 62.2,
     "HealthQ": 2,
-    "EduQ": 1,
+    "EduQ": 2,
     "EconQ": 1,
     "OppQ": 3,
     "CompQ": 1
   },
   "Wilkes County": {
-    "Composite": 44.9,
+    "Composite": 42,
     "Economy": 40.5,
-    "Education": 54.2,
+    "Education": 44.5,
     "Health": 39.7,
     "Opportunity": 42.6,
     "HealthQ": 3,
@@ -1884,27 +1884,27 @@ scoresObj = {
     "CompQ": 1
   },
   "Wilkinson County": {
-    "Composite": 48.7,
+    "Composite": 47.6,
     "Economy": 42.6,
-    "Education": 49.4,
+    "Education": 45.7,
     "Health": 43.1,
     "Opportunity": 62.6,
     "HealthQ": 3,
-    "EduQ": 2,
+    "EduQ": 3,
     "EconQ": 2,
     "OppQ": 3,
     "CompQ": 3
   },
   "Worth County": {
-    "Composite": 46,
+    "Composite": 41.7,
     "Economy": 44,
-    "Education": 46.7,
+    "Education": 32.1,
     "Health": 33.9,
     "Opportunity": 60.2,
     "HealthQ": 2,
     "EduQ": 1,
     "EconQ": 2,
     "OppQ": 3,
-    "CompQ": 2
+    "CompQ": 1
   }
 }

@@ -21,13 +21,6 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 
 	let color = d3.scaleOrdinal().domain(categories).range(d3.schemePaired);
 
-	// let popDomain = d3.extent(data.map( (d) => ( d["Population"] ) ) );
-	// popDomain = popDomain.map((d) => Math.sqrt(d));
-	// let size = d3.scaleLinear().domain(popDomain).range([5, 30]);
-	
-	// const y = d3.scaleBand().rangeRound([0, height]);
-	
-
 	const yAxisLeft = d3.axisLeft(yScale);
 	const yAxisRight = d3.axisRight(yScale).tickSizeOuter(0).tickSizeInner(-width+(width*0.091));
 
@@ -78,7 +71,7 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 	    .attr("class", (d) => d.County.replace(/\s/g , "-"))
 	    .attr("stroke", "#4d4d4d")
 	    .attr("fill", "#e8e8e8")
-	    .attr( "r", 7 )
+	    .attr( "r", 6.5 )
 	    .attr("cx", (d) => xScale(d.Score))
 	    .attr("cy", (d) => yScale(d.Category));
 
@@ -119,6 +112,14 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
         } else {
         	$("#scoreExplain").text("You got it exactly right!");
         }
+
+        //if selecting a new county, make sure all circles are colored grey again
+        //this will avoid having the appearance of two selected counties
+        svg.selectAll("circle")
+        	.attr("fill", "#e8e8e8");
+
+        // remove any guessed circles that may currently exist
+        svg.selectAll(".My-Selection").remove();
 
         // color the circles of the selected county
         $("."+county).attr("fill", "rgba(0, 188, 241, 0.6)");
@@ -222,6 +223,7 @@ d3.csv('https://raw.githubusercontent.com/mmainzer/county-index/master/data/fina
 		newData.forEach(entry => {
 			data.push(entry);
 		});
+
 		console.log(newData);
 
 		svg.selectAll('.circ')
