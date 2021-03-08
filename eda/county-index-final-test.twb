@@ -212,6 +212,381 @@
         </members>
       </column>
     </datasource>
+    <datasource caption='metrics' inline='true' name='federated.0tnla3p11q4ibc14qipt50nano0w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='county-index-data' name='excel-direct.0phgqc310szymh17jhlkn13oa92e'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mmainza/Desktop/projects/county-index/county-index/data/final/county-index-dataTest.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0phgqc310szymh17jhlkn13oa92e' name='metrics' table='[metrics$]' type='table'>
+          <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='6'>
+            <column datatype='string' name='Dimension' ordinal='0' />
+            <column datatype='string' name='Indicator' ordinal='1' />
+            <column datatype='string' name='Class' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0phgqc310szymh17jhlkn13oa92e' name='metrics' table='[metrics$]' type='table'>
+          <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='6'>
+            <column datatype='string' name='Dimension' ordinal='0' />
+            <column datatype='string' name='Indicator' ordinal='1' />
+            <column datatype='string' name='Class' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[metrics]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C17:no:A1:C17:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dimension</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dimension]</local-name>
+            <parent-name>[metrics]</parent-name>
+            <remote-alias>Dimension</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Indicator]</local-name>
+            <parent-name>[metrics]</parent-name>
+            <remote-alias>Indicator</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Class]</local-name>
+            <parent-name>[metrics]</parent-name>
+            <remote-alias>Class</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/metrics.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2021 05:26:10 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='metrics' increment-value='%null%' refresh-type='create' rows-inserted='16' timestamp-start='2021-03-05 17:26:10.487' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Dimension</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dimension]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dimension</remote-alias>
+              <ordinal>0</ordinal>
+              <family>metrics</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Indicator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Indicator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Indicator</remote-alias>
+              <ordinal>1</ordinal>
+              <family>metrics</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Class</remote-alias>
+              <ordinal>2</ordinal>
+              <family>metrics</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='excel-direct.0phgqc310szymh17jhlkn13oa92e' name='metrics' table='[metrics$]' type='table'>
+                <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Dimension' ordinal='0' />
+                  <column datatype='string' name='Indicator' ordinal='1' />
+                  <column datatype='string' name='Class' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='counties (county-index-data)' inline='true' name='federated.0xwx8l9193ubk01gpn9f00jpkekz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='county-index-data' name='excel-direct.05tz00v00upvdg16tnjlt0dd0obi'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mmainza/Desktop/projects/county-index/county-index/data/final/county-index-dataTest.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.05tz00v00upvdg16tnjlt0dd0obi' name='counties' table='[counties$]' type='table'>
+          <columns gridOrigin='A1:D160:no:A1:D160:0' header='yes' outcome='6'>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='integer' name='FIPS' ordinal='2' />
+            <column datatype='string' name='Rural' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.05tz00v00upvdg16tnjlt0dd0obi' name='counties' table='[counties$]' type='table'>
+          <columns gridOrigin='A1:D160:no:A1:D160:0' header='yes' outcome='6'>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='integer' name='FIPS' ordinal='2' />
+            <column datatype='string' name='Rural' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[counties]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D160:no:A1:D160:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[counties]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[counties]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIPS]</local-name>
+            <parent-name>[counties]</parent-name>
+            <remote-alias>FIPS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rural</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Rural]</local-name>
+            <parent-name>[counties]</parent-name>
+            <remote-alias>Rural</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/counties.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2021 05:26:14 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='counties (county-index-data)' increment-value='%null%' refresh-type='create' rows-inserted='159' timestamp-start='2021-03-05 17:26:14.954' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>0</ordinal>
+              <family>counties</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>1</ordinal>
+              <family>counties</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIPS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FIPS</remote-alias>
+              <ordinal>2</ordinal>
+              <family>counties</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rural</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Rural]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rural</remote-alias>
+              <ordinal>3</ordinal>
+              <family>counties</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='excel-direct.05tz00v00upvdg16tnjlt0dd0obi' name='counties' table='[counties$]' type='table'>
+                <columns gridOrigin='A1:D160:no:A1:D160:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Region' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='integer' name='FIPS' ordinal='2' />
+                  <column datatype='string' name='Rural' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
     <datasource caption='statsCounty' inline='true' name='federated.1kwhgt019i07ve11zzmam0036okj' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1268,12 +1643,12 @@
           <groupfilter function='level-members' level='[FIPS]' />
         </groupfilter>
       </group>
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/statsCounty.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2020 12:55:05 PM' username='tableau_internal_user'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/statsCounty.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2021 05:25:58 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='statsCounty' increment-value='%null%' refresh-type='create' rows-inserted='159' timestamp-start='2020-09-16 12:55:05.437' />
+            <refresh-event add-from-file-path='statsCounty' increment-value='%null%' refresh-type='create' rows-inserted='159' timestamp-start='2021-03-05 17:25:58.616' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -1442,6 +1817,14 @@
               <bucket>&quot;0&quot;</bucket>
             </map>
           </encoding>
+          <encoding attr='color' field='[none:Calculation_457959827041402884:nk]' type='palette'>
+            <map to='#007db9'>
+              <bucket>&quot;Selected County&quot;</bucket>
+            </map>
+            <map to='#686868'>
+              <bucket>&quot;Other County&quot;</bucket>
+            </map>
+          </encoding>
           <encoding attr='color' field='[none:Composite Quintile:nk]' type='palette'>
             <map to='#08519c'>
               <bucket>&quot;4&quot;</bucket>
@@ -1460,14 +1843,6 @@
             </map>
             <map to='#eff3ff'>
               <bucket>&quot;0&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[none:Calculation_457959827041402884:nk]' type='palette'>
-            <map to='#007db9'>
-              <bucket>&quot;Selected County&quot;</bucket>
-            </map>
-            <map to='#686868'>
-              <bucket>&quot;Other County&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1543,210 +1918,6 @@
                   <column datatype='integer' name='Opportunity Quartile' ordinal='48' />
                   <column datatype='string' name='Composite Quartile' ordinal='49' />
                   <column datatype='string' name='Region' ordinal='50' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='counties (county-index-data)' inline='true' name='federated.0xwx8l9193ubk01gpn9f00jpkekz' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='county-index-data' name='excel-direct.05tz00v00upvdg16tnjlt0dd0obi'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mmainza/Desktop/projects/county-index/county-index/data/final/county-index-dataTest.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.05tz00v00upvdg16tnjlt0dd0obi' name='counties' table='[counties$]' type='table'>
-          <columns gridOrigin='A1:D160:no:A1:D160:0' header='yes' outcome='6'>
-            <column datatype='string' name='Region' ordinal='0' />
-            <column datatype='string' name='County' ordinal='1' />
-            <column datatype='integer' name='FIPS' ordinal='2' />
-            <column datatype='string' name='Rural' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.05tz00v00upvdg16tnjlt0dd0obi' name='counties' table='[counties$]' type='table'>
-          <columns gridOrigin='A1:D160:no:A1:D160:0' header='yes' outcome='6'>
-            <column datatype='string' name='Region' ordinal='0' />
-            <column datatype='string' name='County' ordinal='1' />
-            <column datatype='integer' name='FIPS' ordinal='2' />
-            <column datatype='string' name='Rural' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <refresh increment-key='' incremental-updates='false' />
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[counties]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:D160:no:A1:D160:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Region</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Region]</local-name>
-            <parent-name>[counties]</parent-name>
-            <remote-alias>Region</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>County</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[County]</local-name>
-            <parent-name>[counties]</parent-name>
-            <remote-alias>County</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>FIPS</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[FIPS]</local-name>
-            <parent-name>[counties]</parent-name>
-            <remote-alias>FIPS</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Rural</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Rural]</local-name>
-            <parent-name>[counties]</parent-name>
-            <remote-alias>Rural</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/counties.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2020 12:55:40 PM' username='tableau_internal_user'>
-          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='counties (county-index-data)' increment-value='%null%' refresh-type='create' rows-inserted='159' timestamp-start='2020-09-16 12:55:40.573' />
-          </refresh>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>Region</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Region]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Region</remote-alias>
-              <ordinal>0</ordinal>
-              <family>counties</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>12</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>County</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[County]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>County</remote-alias>
-              <ordinal>1</ordinal>
-              <family>counties</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>159</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>FIPS</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[FIPS]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>FIPS</remote-alias>
-              <ordinal>2</ordinal>
-              <family>counties</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>159</approx-count>
-              <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Rural</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Rural]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Rural</remote-alias>
-              <ordinal>3</ordinal>
-              <family>counties</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Migrated Data' id='Migrated Data'>
-            <properties context=''>
-              <relation connection='excel-direct.05tz00v00upvdg16tnjlt0dd0obi' name='counties' table='[counties$]' type='table'>
-                <columns gridOrigin='A1:D160:no:A1:D160:0' header='yes' outcome='6'>
-                  <column datatype='string' name='Region' ordinal='0' />
-                  <column datatype='string' name='County' ordinal='1' />
-                  <column datatype='integer' name='FIPS' ordinal='2' />
-                  <column datatype='string' name='Rural' ordinal='3' />
                 </columns>
               </relation>
             </properties>
@@ -2027,12 +2198,12 @@
       <column-instance column='[Calculation_1304918032576376835]' derivation='Sum' name='[sum:Calculation_1304918032576376835:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Measure]' derivation='Sum' name='[sum:Measure:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Pop Change Label (copy)_1797147403399274499]' derivation='Sum' name='[sum:Pop Change Label (copy)_1797147403399274499:qk]' pivot='key' type='quantitative' />
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/stackedCounty.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2020 12:55:25 PM' username='tableau_internal_user'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/stackedCounty.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2021 05:26:04 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='stackedCounty' increment-value='%null%' refresh-type='create' rows-inserted='16059' timestamp-start='2020-09-16 12:55:25.191' />
+            <refresh-event add-from-file-path='stackedCounty' increment-value='%null%' refresh-type='create' rows-inserted='17967' timestamp-start='2021-03-05 17:26:04.712' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -2060,7 +2231,7 @@
               <family>stacked</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>13</approx-count>
+              <approx-count>12</approx-count>
               <contains-null>true</contains-null>
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
@@ -2089,7 +2260,7 @@
               <family>stacked</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>101</approx-count>
+              <approx-count>113</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
@@ -2104,7 +2275,7 @@
               <family>stacked</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>5512</approx-count>
+              <approx-count>4979</approx-count>
               <contains-null>true</contains-null>
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
@@ -2227,177 +2398,6 @@
                   <column datatype='string' name='Metric' ordinal='4' />
                   <column datatype='real' name='Measure' ordinal='5' />
                   <column datatype='string' name='Region' ordinal='6' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='metrics' inline='true' name='federated.0tnla3p11q4ibc14qipt50nano0w' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='county-index-data' name='excel-direct.0phgqc310szymh17jhlkn13oa92e'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mmainza/Desktop/projects/county-index/county-index/data/final/county-index-dataTest.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0phgqc310szymh17jhlkn13oa92e' name='metrics' table='[metrics$]' type='table'>
-          <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='6'>
-            <column datatype='string' name='Dimension' ordinal='0' />
-            <column datatype='string' name='Indicator' ordinal='1' />
-            <column datatype='string' name='Class' ordinal='2' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0phgqc310szymh17jhlkn13oa92e' name='metrics' table='[metrics$]' type='table'>
-          <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='6'>
-            <column datatype='string' name='Dimension' ordinal='0' />
-            <column datatype='string' name='Indicator' ordinal='1' />
-            <column datatype='string' name='Class' ordinal='2' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <refresh increment-key='' incremental-updates='false' />
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[metrics]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:C17:no:A1:C17:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Dimension</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Dimension]</local-name>
-            <parent-name>[metrics]</parent-name>
-            <remote-alias>Dimension</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Indicator</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Indicator]</local-name>
-            <parent-name>[metrics]</parent-name>
-            <remote-alias>Indicator</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Class</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Class]</local-name>
-            <parent-name>[metrics]</parent-name>
-            <remote-alias>Class</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='integer' hidden='true' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/metrics.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2020 12:55:35 PM' username='tableau_internal_user'>
-          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='metrics' increment-value='%null%' refresh-type='create' rows-inserted='16' timestamp-start='2020-09-16 12:55:35.601' />
-          </refresh>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>Dimension</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Dimension]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Dimension</remote-alias>
-              <ordinal>0</ordinal>
-              <family>metrics</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Indicator</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Indicator]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Indicator</remote-alias>
-              <ordinal>1</ordinal>
-              <family>metrics</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>16</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Class</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Class]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Class</remote-alias>
-              <ordinal>2</ordinal>
-              <family>metrics</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Migrated Data' id='Migrated Data'>
-            <properties context=''>
-              <relation connection='excel-direct.0phgqc310szymh17jhlkn13oa92e' name='metrics' table='[metrics$]' type='table'>
-                <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='6'>
-                  <column datatype='string' name='Dimension' ordinal='0' />
-                  <column datatype='string' name='Indicator' ordinal='1' />
-                  <column datatype='string' name='Class' ordinal='2' />
                 </columns>
               </relation>
             </properties>
@@ -2823,12 +2823,12 @@
       </column>
       <column datatype='real' hidden='true' name='[Population Change 2011-2020]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/actuals.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2020 12:55:48 PM' username='tableau_internal_user'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mmainza/Desktop/projects/county-index/county-index/data/extracts/actuals.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2021 05:26:18 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='actuals' increment-value='%null%' refresh-type='create' rows-inserted='159' timestamp-start='2020-09-16 12:55:48.494' />
+            <refresh-event add-from-file-path='actuals' increment-value='%null%' refresh-type='create' rows-inserted='159' timestamp-start='2021-03-05 17:26:18.779' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -2861,11 +2861,11 @@
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>2018 Youth (16-19) Not In School and Not Working %</remote-name>
+              <remote-name>2019 Youth (16-19) Not In School and Not Working %</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[2018 Youth (16-19) Not In School and Not Working %]</local-name>
+              <local-name>[2019 Youth (16-19) Not In School and Not Working %]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>2018 Youth (16-19) Not In School and Not Working %</remote-alias>
+              <remote-alias>2019 Youth (16-19) Not In School and Not Working %</remote-alias>
               <ordinal>2</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
@@ -2875,25 +2875,25 @@
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>2018 Poverty Rate</remote-name>
+              <remote-name>% Change Poverty 2012-2019</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[2018 Poverty Rate]</local-name>
+              <local-name>[% Change Poverty 2012-2019]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>2018 Poverty Rate</remote-alias>
+              <remote-alias>% Change Poverty 2012-2019</remote-alias>
               <ordinal>3</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>120</approx-count>
+              <approx-count>159</approx-count>
               <contains-null>true</contains-null>
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>% Change Poverty 2012-2018</remote-name>
+              <remote-name>2020 GRP</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[% Change Poverty 2012-2018]</local-name>
+              <local-name>[2020 GRP]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>% Change Poverty 2012-2018</remote-alias>
+              <remote-alias>2020 GRP</remote-alias>
               <ordinal>4</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
@@ -2903,16 +2903,44 @@
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>2018  % 3 and 4 in Pre-K</remote-name>
+              <remote-name>GRP % Change Since 2010</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[2018  % 3 and 4 in Pre-K]</local-name>
+              <local-name>[GRP % Change Since 2010]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>2018  % 3 and 4 in Pre-K</remote-alias>
+              <remote-alias>GRP % Change Since 2010</remote-alias>
               <ordinal>5</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>135</approx-count>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Change % Associates or Higher 2011-2019</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Change % Associates or Higher 2011-2019]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Change % Associates or Higher 2011-2019</remote-alias>
+              <ordinal>6</ordinal>
+              <family>actuals</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2019 % 4 in Pre-K</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2019 % 4 in Pre-K]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2019 % 4 in Pre-K</remote-alias>
+              <ordinal>7</ordinal>
+              <family>actuals</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>148</approx-count>
               <contains-null>true</contains-null>
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
@@ -2922,7 +2950,7 @@
               <local-name>[2019 % No Insurance]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>2019 % No Insurance</remote-alias>
-              <ordinal>6</ordinal>
+              <ordinal>8</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
@@ -2936,7 +2964,7 @@
               <local-name>[2018 Primary Care Physicians (per 100,000 population)]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>2018 Primary Care Physicians (per 100,000 population)</remote-alias>
-              <ordinal>7</ordinal>
+              <ordinal>9</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
@@ -2945,16 +2973,44 @@
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Unemployment Rate Change Since 2015</remote-name>
+              <remote-name>Unemployment Rate Change Since 2010</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[Unemployment Rate Change Since 2015]</local-name>
+              <local-name>[Unemployment Rate Change Since 2010]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Unemployment Rate Change Since 2015</remote-alias>
-              <ordinal>8</ordinal>
+              <remote-alias>Unemployment Rate Change Since 2010</remote-alias>
+              <ordinal>10</ordinal>
               <family>actuals</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>42</approx-count>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2020 Grad Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2020 Grad Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2020 Grad Rate</remote-alias>
+              <ordinal>11</ordinal>
+              <family>actuals</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>154</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2019 Labor Force Participation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2019 Labor Force Participation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2019 Labor Force Participation</remote-alias>
+              <ordinal>12</ordinal>
+              <family>actuals</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
               <contains-null>true</contains-null>
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
@@ -2964,7 +3020,7 @@
               <local-name>[Region]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Region</remote-alias>
-              <ordinal>9</ordinal>
+              <ordinal>13</ordinal>
               <family>actuals</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -8311,8 +8367,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='182' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='181' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='186' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='185' param='vert' w='98828' x='586' y='1042'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='12370' id='99' w='48096' x='659' y='1172'>
                   <formatted-text>
                     <run fontcolor='#333333' fontsize='32'>Georgia County Index</run>
@@ -8940,8 +8996,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='3000' minheight='3000' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='251' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='250' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='255' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='254' param='vert' w='98828' x='586' y='1042'>
                 <zone fixed-size='49' h='7421' id='63' is-fixed='true' name='County Label' show-title='false' w='30184' x='659' y='1172'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
@@ -9698,8 +9754,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2500' minheight='2500' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='251' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='250' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='255' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='254' param='vert' w='98828' x='586' y='1042'>
                 <zone fixed-size='68' h='9895' id='63' is-fixed='true' name='County Label' show-title='false' w='30184' x='659' y='1172'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
@@ -10426,8 +10482,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2450' minheight='2450' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='277' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='276' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='281' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='280' param='vert' w='98828' x='586' y='1042'>
                 <zone fixed-size='57' h='8463' id='63' is-fixed='true' name='County Label' show-title='false' w='29195' x='659' y='1172'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
@@ -11148,8 +11204,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2550' minheight='2550' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='267' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='266' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='271' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='270' param='vert' w='98828' x='586' y='1042'>
                 <zone fixed-size='104' h='14583' id='63' is-fixed='true' name='County Label' show-title='false' w='24304' x='659' y='1172'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
@@ -11955,8 +12011,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2950' minheight='2950' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='237' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='236' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='241' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='240' param='vert' w='98828' x='586' y='1042'>
                 <zone fixed-size='51' h='7649' id='63' is-fixed='true' name='County Label' show-title='false' w='30182' x='659' y='1172'>
                   <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
                   <zone-style>
@@ -12326,8 +12382,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='146' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='145' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='150' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='149' param='vert' w='98828' x='586' y='1042'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='6771' id='32' w='98682' x='659' y='1172'>
                   <formatted-text>
                     <run bold='true' fontcolor='#333333' fontsize='24'>Table View</run>
